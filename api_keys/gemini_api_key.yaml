@@ -1,0 +1,4 @@
+# Please add your API key below and remember to not share it !
+gemini:
+  api_key: "my_api_key"
+
