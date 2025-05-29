@@ -1,0 +1,526 @@
+{
+    "metadata": {
+      "source": "NIST Fundamental Physical Constants - 2022 CODATA adjustment",
+      "url": "http://physics.nist.gov/constants",
+      "title": "Fundamental Physical Constants — Extensive Listing"
+    }, 
+    "constants": [
+        {
+          "quantity": "speed of light",
+          "symbol": "c",
+          "value": "299792458",
+          "unit": "m s⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "vacuum magnetic permeability",
+          "symbol": "μ₀",
+          "value": "1.25663706127(20) × 10⁻⁶",
+          "unit": "N A⁻²",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "vacuum electric permittivity",
+          "symbol": "ε₀",
+          "value": "8.8541878188(14) × 10⁻¹²",
+          "unit": "F m⁻¹",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "characteristic impedance of vacuum",
+          "symbol": "Z₀",
+          "value": "376.730313412(59)",
+          "unit": "Ω",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "Newtonian constant of gravitation",
+          "symbol": "G",
+          "value": "6.67430(15) × 10⁻¹¹",
+          "unit": "m³ kg⁻¹ s⁻²",
+          "uncertainty": "2.2 × 10⁻⁵"
+        },
+        {
+          "quantity": "Planck constant",
+          "symbol": "h",
+          "value": "6.62607015 × 10⁻³⁴",
+          "unit": "J Hz⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "reduced Planck constant",
+          "symbol": "ℏ",
+          "value": "1.054571817... × 10⁻³⁴",
+          "unit": "J s",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Planck mass",
+          "symbol": "mₚ",
+          "value": "2.176434(24) × 10⁻⁸",
+          "unit": "kg",
+          "uncertainty": "1.1 × 10⁻⁵"
+        },
+        {
+          "quantity": "Planck temperature",
+          "symbol": "Tₚ",
+          "value": "1.416784(16) × 10³²",
+          "unit": "K",
+          "uncertainty": "1.1 × 10⁻⁵"
+        },
+        {
+          "quantity": "Planck length",
+          "symbol": "lₚ",
+          "value": "1.616255(18) × 10⁻³⁵",
+          "unit": "m",
+          "uncertainty": "1.1 × 10⁻⁵"
+        },
+        {
+          "quantity": "Planck time",
+          "symbol": "tₚ",
+          "value": "5.391247(60) × 10⁻⁴⁴",
+          "unit": "s",
+          "uncertainty": "1.1 × 10⁻⁵"
+        }
+      ,
+      
+        {
+          "quantity": "elementary charge",
+          "symbol": "e",
+          "value": "1.602176634 × 10⁻¹⁹",
+          "unit": "C",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "magnetic flux quantum",
+          "symbol": "Φ₀",
+          "value": "2.067833848... × 10⁻¹⁵",
+          "unit": "Wb",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "conductance quantum",
+          "symbol": "G₀",
+          "value": "7.748091729... × 10⁻⁵",
+          "unit": "S",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "inverse of conductance quantum",
+          "symbol": "G₀⁻¹",
+          "value": "12906.40372...",
+          "unit": "Ω",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Josephson constant",
+          "symbol": "Kⱼ",
+          "value": "483597.8484... × 10⁹",
+          "unit": "Hz V⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "von Klitzing constant",
+          "symbol": "Rₖ",
+          "value": "25812.80745...",
+          "unit": "Ω",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Bohr magneton",
+          "symbol": "μᵦ",
+          "value": "9.2740100657(29) × 10⁻²⁴",
+          "unit": "J T⁻¹",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "nuclear magneton",
+          "symbol": "μₙ",
+          "value": "5.0507837393(16) × 10⁻²⁷",
+          "unit": "J T⁻¹",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        }
+      ,
+      
+        {
+          "quantity": "fine-structure constant",
+          "symbol": "α",
+          "value": "7.2973525643(11) × 10⁻³",
+          "unit": "dimensionless",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "inverse fine-structure constant",
+          "symbol": "α⁻¹",
+          "value": "137.035999177(21)",
+          "unit": "dimensionless",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "Rydberg constant",
+          "symbol": "R∞",
+          "value": "10973731.568157(12)",
+          "unit": "m⁻¹",
+          "uncertainty": "1.1 × 10⁻¹²"
+        },
+        {
+          "quantity": "Bohr radius",
+          "symbol": "a₀",
+          "value": "5.29177210544(82) × 10⁻¹¹",
+          "unit": "m",
+          "uncertainty": "1.6 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "Hartree energy",
+          "symbol": "Eₕ",
+          "value": "4.3597447222060(48) × 10⁻¹⁸",
+          "unit": "J",
+          "uncertainty": "1.1 × 10⁻¹²"
+        }
+      ,
+      
+        {
+          "quantity": "electron mass",
+          "symbol": "mₑ",
+          "value": "9.1093837139(28) × 10⁻³¹",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "electron charge to mass quotient",
+          "symbol": "-e/mₑ",
+          "value": "-1.75882000838(55) × 10¹¹",
+          "unit": "C kg⁻¹",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "reduced Compton wavelength",
+          "symbol": "λ̄ᶜ",
+          "value": "3.86159267441(12) × 10⁻¹³",
+          "unit": "m",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "Compton wavelength",
+          "symbol": "λᶜ",
+          "value": "2.42631023538(76) × 10⁻¹²",
+          "unit": "m",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "classical electron radius",
+          "symbol": "rₑ",
+          "value": "2.8179403205(13) × 10⁻¹⁵",
+          "unit": "m",
+          "uncertainty": "4.7 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "electron magnetic moment",
+          "symbol": "μₑ",
+          "value": "-9.2847646917(29) × 10⁻²⁴",
+          "unit": "J T⁻¹",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "electron g-factor",
+          "symbol": "gₑ",
+          "value": "-2.00231930436092(36)",
+          "unit": "dimensionless",
+          "uncertainty": "1.8 × 10⁻¹³"
+        }
+      ,
+     
+        {
+          "quantity": "muon mass",
+          "symbol": "mμ",
+          "value": "1.883531627(42) × 10⁻²⁸",
+          "unit": "kg",
+          "uncertainty": "2.2 × 10⁻⁸"
+        },
+        {
+          "quantity": "muon-electron mass ratio",
+          "symbol": "mμ/mₑ",
+          "value": "206.7682827(46)",
+          "unit": "dimensionless",
+          "uncertainty": "2.2 × 10⁻⁸"
+        },
+        {
+          "quantity": "muon magnetic moment",
+          "symbol": "μμ",
+          "value": "-4.49044830(10) × 10⁻²⁶",
+          "unit": "J T⁻¹",
+          "uncertainty": "2.2 × 10⁻⁸"
+        },
+        {
+          "quantity": "muon magnetic moment anomaly",
+          "symbol": "aμ",
+          "value": "1.16592062(41) × 10⁻³",
+          "unit": "dimensionless",
+          "uncertainty": "3.5 × 10⁻⁷"
+        },
+        {
+          "quantity": "muon g-factor",
+          "symbol": "gμ",
+          "value": "-2.00233184123(82)",
+          "unit": "dimensionless",
+          "uncertainty": "4.1 × 10⁻¹⁰"
+        }
+      ,
+      
+        {
+          "quantity": "tau mass",
+          "symbol": "mτ",
+          "value": "3.16754(21) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "6.8 × 10⁻⁵"
+        },
+        {
+          "quantity": "tau-electron mass ratio",
+          "symbol": "mτ/mₑ",
+          "value": "3477.23(23)",
+          "unit": "dimensionless",
+          "uncertainty": "6.8 × 10⁻⁵"
+        },
+        {
+          "quantity": "tau-muon mass ratio",
+          "symbol": "mτ/mμ",
+          "value": "16.8170(11)",
+          "unit": "dimensionless",
+          "uncertainty": "6.8 × 10⁻⁵"
+        }
+      ,
+    
+        {
+          "quantity": "proton mass",
+          "symbol": "mₚ",
+          "value": "1.67262192595(52) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "proton-electron mass ratio",
+          "symbol": "mₚ/mₑ",
+          "value": "1836.152673426(32)",
+          "unit": "dimensionless",
+          "uncertainty": "1.7 × 10⁻¹¹"
+        },
+        {
+          "quantity": "proton charge to mass quotient",
+          "symbol": "e/mₚ",
+          "value": "9.5788331430(30) × 10⁷",
+          "unit": "C kg⁻¹",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "proton rms charge radius",
+          "symbol": "rₚ",
+          "value": "8.4075(64) × 10⁻¹⁶",
+          "unit": "m",
+          "uncertainty": "7.6 × 10⁻⁴"
+        },
+        {
+          "quantity": "proton magnetic moment",
+          "symbol": "μₚ",
+          "value": "1.41060679545(60) × 10⁻²⁶",
+          "unit": "J T⁻¹",
+          "uncertainty": "4.3 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "proton g-factor",
+          "symbol": "gₚ",
+          "value": "5.5856946893(16)",
+          "unit": "dimensionless",
+          "uncertainty": "2.9 × 10⁻¹⁰"
+        }
+      ,
+     
+        {
+          "quantity": "neutron mass",
+          "symbol": "mₙ",
+          "value": "1.67492750056(85) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "5.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "neutron-electron mass ratio",
+          "symbol": "mₙ/mₑ",
+          "value": "1838.68366200(74)",
+          "unit": "dimensionless",
+          "uncertainty": "4.0 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "neutron-proton mass difference",
+          "symbol": "mₙ - mₚ",
+          "value": "2.30557461(67) × 10⁻³⁰",
+          "unit": "kg",
+          "uncertainty": "2.9 × 10⁻⁷"
+        },
+        {
+          "quantity": "neutron magnetic moment",
+          "symbol": "μₙ",
+          "value": "-9.6623653(23) × 10⁻²⁷",
+          "unit": "J T⁻¹",
+          "uncertainty": "2.4 × 10⁻⁷"
+        },
+        {
+          "quantity": "neutron g-factor",
+          "symbol": "gₙ",
+          "value": "-3.82608552(90)",
+          "unit": "dimensionless",
+          "uncertainty": "2.4 × 10⁻⁷"
+        }
+      ,
+     
+        {
+          "quantity": "deuteron mass",
+          "symbol": "mₑ",
+          "value": "3.3435837768(10) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "deuteron-electron mass ratio",
+          "symbol": "mₑ/mₑ",
+          "value": "3670.482967655(63)",
+          "unit": "dimensionless",
+          "uncertainty": "1.7 × 10⁻¹¹"
+        },
+        {
+          "quantity": "deuteron rms charge radius",
+          "symbol": "rₑ",
+          "value": "2.12778(27) × 10⁻¹⁵",
+          "unit": "m",
+          "uncertainty": "1.3 × 10⁻⁴"
+        },
+        {
+          "quantity": "deuteron magnetic moment",
+          "symbol": "μₑ",
+          "value": "4.330735087(11) × 10⁻²⁷",
+          "unit": "J T⁻¹",
+          "uncertainty": "2.6 × 10⁻⁹"
+        }
+      ,
+      
+        {
+          "quantity": "triton mass",
+          "symbol": "mₜ",
+          "value": "5.0073567512(16) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "triton-electron mass ratio",
+          "symbol": "mₜ/mₑ",
+          "value": "5496.92153551(21)",
+          "unit": "dimensionless",
+          "uncertainty": "3.8 × 10⁻¹¹"
+        },
+        {
+          "quantity": "triton magnetic moment",
+          "symbol": "μₜ",
+          "value": "1.5046095178(30) × 10⁻²⁶",
+          "unit": "J T⁻¹",
+          "uncertainty": "2.0 × 10⁻⁹"
+        }
+      ,
+    
+        {
+          "quantity": "helion mass",
+          "symbol": "mₕ",
+          "value": "5.0064127862(16) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "helion-electron mass ratio",
+          "symbol": "mₕ/mₑ",
+          "value": "5495.88527984(16)",
+          "unit": "dimensionless",
+          "uncertainty": "2.9 × 10⁻¹¹"
+        },
+        {
+          "quantity": "helion magnetic moment",
+          "symbol": "μₕ",
+          "value": "-1.07461755198(93) × 10⁻²⁶",
+          "unit": "J T⁻¹",
+          "uncertainty": "8.7 × 10⁻¹⁰"
+        }
+      ,
+      
+        {
+          "quantity": "alpha particle mass",
+          "symbol": "mα",
+          "value": "6.6446573450(21) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "alpha particle to electron mass ratio",
+          "symbol": "mα/mₑ",
+          "value": "7294.29954171(17)",
+          "unit": "dimensionless",
+          "uncertainty": "2.4 × 10⁻¹¹"
+        },
+        {
+          "quantity": "alpha particle rms charge radius",
+          "symbol": "rα",
+          "value": "1.6785(21) × 10⁻¹⁵",
+          "unit": "m",
+          "uncertainty": "1.2 × 10⁻³"
+        }
+      ,
+     
+        {
+          "quantity": "Avogadro constant",
+          "symbol": "Nₐ",
+          "value": "6.02214076 × 10²³",
+          "unit": "mol⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Boltzmann constant",
+          "symbol": "k",
+          "value": "1.380649 × 10⁻²³",
+          "unit": "J K⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "atomic mass constant",
+          "symbol": "mᵤ",
+          "value": "1.66053906892(52) × 10⁻²⁷",
+          "unit": "kg",
+          "uncertainty": "3.1 × 10⁻¹⁰"
+        },
+        {
+          "quantity": "molar gas constant",
+          "symbol": "R",
+          "value": "8.314462618...",
+          "unit": "J mol⁻¹ K⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Faraday constant",
+          "symbol": "F",
+          "value": "96485.33212...",
+          "unit": "C mol⁻¹",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Stefan-Boltzmann constant",
+          "symbol": "σ",
+          "value": "5.670374419... × 10⁻⁸",
+          "unit": "W m⁻² K⁻⁴",
+          "uncertainty": "exact"
+        },
+        {
+          "quantity": "Wien displacement law constant",
+          "symbol": "b",
+          "value": "2.897771955... × 10⁻³",
+          "unit": "m K",
+          "uncertainty": "exact"
+        }
+    ]
+    
+    }
+    
+  
