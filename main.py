@@ -20,6 +20,9 @@ from utils.load_gemini_api import set_gemini_api_key
 from fastapi import FastAPI, Request
 from graph.workflow import TutorWorkflow
 import yaml
+from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
+import os
 
 with open("api_keys/gemini_api_key.yaml") as f:
     config = yaml.safe_load(f)
@@ -28,6 +31,15 @@ app = FastAPI(title="Mini Tutor Agent")
 set_gemini_api_key()
 workflow = TutorWorkflow(config["gemini"]["api_key"])
 
+# Mount the frontend folder
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
+
+# Serve the HTML page at root
+@app.get("/", response_class=HTMLResponse)
+async def serve_home():
+    return FileResponse("frontend/index.html")
+
+# API endpoint for chat
 @app.post("/chat")
 async def chat(request: Request):
     data = await request.json()

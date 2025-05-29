@@ -12,7 +12,7 @@ class TutorAgent:
         self.llm_raw = ChatGoogleGenerativeAI(
             model="gemini-2.5-flash-preview-05-20",
             google_api_key=api_key,
-            temperature=0.3,    
+            temperature=0.5,    
         )
         
         self.memory = ConversationSummaryMemory(
@@ -34,8 +34,8 @@ class TutorAgent:
         - math_agent: Handles simple arithmetic problems
         - physics_agent: Handles physics problems, constants, formulas, unit conversions
         User message: {input_text}
-        Given the user question above, determine which agent should handle it. You can responde with "math_agent", "physics_agent", or "FINISH" if the question is not related to either agent. 
-        If the question is answered satisfactorily,
+        Given the user question above and also have a look at the conversation summary and check if the user is refering to it or not, determine which agent should handle it. You can responde with "math_agent", "physics_agent", or "FINISH" if the question is not related to either agent. 
+        Please answer in a helpful and conversational way, using the context above in the conversation summary if needed.
         """
 
         try:
