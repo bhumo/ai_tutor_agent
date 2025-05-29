@@ -6,7 +6,6 @@ charset-normalizer==3.4.2
 click==8.2.1
 fastapi==0.115.12
 filetype==1.2.0
-google-ai-generativelanguage==0.6.18
 google-api-core==2.25.0rc1
 google-api-python-client==2.170.0
 google-auth==2.40.2
