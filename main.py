@@ -29,8 +29,9 @@ with open("api_keys/gemini_api_key.yaml") as f:
 
 app = FastAPI(title="Mini Tutor Agent")
 set_gemini_api_key()
-workflow = TutorWorkflow(config["gemini"]["api_key"])
-
+api_key = os.environ["GEMINI_API_KEY"] 
+# workflow = TutorWorkflow(config["gemini"]["api_key"])
+workflow = TutorWorkflow(api_key)
 # Mount the frontend folder
 app.mount("/static", StaticFiles(directory="frontend"), name="static")
 

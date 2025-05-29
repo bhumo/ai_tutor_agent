@@ -21,10 +21,13 @@ def set_gemini_api_key():
     """
     Set the Gemini API key in the environment variables and initialize the Gemini API client.
     """
-    # Load the API key  
-    api_key = load_gemini_api_key()
-    # Set the API key in the environment variables
-    os.environ['GOOGLE_API_KEY'] = api_key
-    # Initialize the Gemini API client
-    genai.configure(api_key=api_key)    
+    # # Load the API key  
+    # api_key = load_gemini_api_key()
+    # # Set the API key in the environment variables
+    # os.environ['GOOGLE_API_KEY'] = api_key
+    # # Initialize the Gemini API client
+    # genai.configure(api_key=api_key)   
+    # 
+    api_key = os.environ["GEMINI_API_KEY"] 
+    genai.configure(api_key=api_key) 
     
