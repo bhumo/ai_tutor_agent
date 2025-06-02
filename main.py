@@ -26,7 +26,6 @@ import os
 
 with open("api_keys/gemini_api_key.yaml") as f:
     config = yaml.safe_load(f)
-
 app = FastAPI(title="Mini Tutor Agent")
 set_gemini_api_key()
 api_key = os.environ["GEMINI_API_KEY"] 

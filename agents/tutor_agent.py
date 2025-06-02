@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.memory import ConversationSummaryMemory
+from langchain_core.messages import AIMessage # Added AIMessage import
 
 
 class RouteDecision(BaseModel):
@@ -45,3 +46,16 @@ class TutorAgent:
         except Exception as e:
             print(f"[TutorAgent Routing Error] {str(e)}")
             return "math_agent"  # default fallback
+        
+    def generate_fallback(self, query: str) -> str: 
+        print(f"Generating fallback response for query: {query}")
+        fallback_prompt = f"""
+        You are a helpful tutor agent. The user has asked a question that is not related to math or physics.
+        User question: {query}
+        Please provide a friendly and helpful response explaining that you can only assist with math or physics related questions at the moment.
+        """
+
+        response = self.llm_raw.invoke(fallback_prompt)
+        print("Fallback response:", response.content)
+
+        return response.content  

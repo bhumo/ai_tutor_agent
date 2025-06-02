@@ -1,105 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Tutor Agent Chat</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Markdown Parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-      margin: 0;
-      padding: 20px;
+      background-color: #f0f2f5;
+      padding-top: 30px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
+
     .chat-container {
-      width: 100%;
-      max-width: 600px;
-      background: white;
+      max-width: 700px;
+      height: 75vh;
+      margin: auto;
+      background-color: white;
+      border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      overflow-y: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
       display: flex;
       flex-direction: column;
-      height: 80vh;
-      overflow-y: auto;
     }
-    .message {
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
-      max-width: 80%;
-    }
-    .user-message {
-      background-color: #daf0ff;
-      align-self: flex-end;
-    }
-    .bot-message {
-      background-color: #e6e6e6;
-      align-self: flex-start;
-    }
-    .input-container {
-      width: 100%;
-      max-width: 600px;
+
+    .message-wrapper {
       display: flex;
-      margin-top: 10px;
+      margin-bottom: 15px;
     }
-    #userInput {
-      flex: 1;
+
+    .bot-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .user-wrapper {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 10px;
+    }
+
+    .message {
+      padding: 12px 18px;
+      border-radius: 20px;
+      max-width: 75%;
+      word-wrap: break-word;
+      line-height: 1.5;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .user-message {
+      background-color: #d0e6ff;
+    }
+
+    .bot-message {
+      background-color: #eaeaea;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .bot-message pre {
+      background: #f6f8fa;
       padding: 10px;
-      border: 1px solid #ccc;
       border-radius: 8px;
-      margin-right: 10px;
+      overflow-x: auto;
     }
-    button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
+
+    .bot-message code {
+      background: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .input-area {
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .form-control {
+      border-radius: 20px;
+      padding: 12px;
+    }
+
+    .btn {
+      border-radius: 20px;
+    }
+
+    .loader {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
   </style>
 </head>
 <body>
+
   <div class="chat-container" id="chatBox">
-    <div class="bot-message message">Hi! I'm your Tutor Agent. Ask me anything.</div>
-  </div>
-  <div class="input-container">
-    <input type="text" id="userInput" placeholder="Type your question...">
-    <button onclick="sendMessage()">Send</button>
+    <div class="message-wrapper bot-wrapper">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="Tutor" class="avatar" />
+      <div class="message bot-message">
+        Hi! I'm your Tutor Agent. Ask me anything related to <strong>math</strong> or <strong>physics</strong>.
+      </div>
+    </div>
   </div>
 
+  <div class="input-area px-3">
+    <div class="input-group">
+      <input type="text" class="form-control" id="userInput" placeholder="Type your question...">
+      <button class="btn btn-primary ms-2" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
+    const input = document.getElementById("userInput");
+    const chatBox = document.getElementById("chatBox");
+    let loaderElem = null;
+
     async function sendMessage() {
-      const input = document.getElementById("userInput");
-      const chatBox = document.getElementById("chatBox");
       const message = input.value.trim();
       if (!message) return;
 
-      const userMsgElem = document.createElement("div");
-      userMsgElem.className = "message user-message";
-      userMsgElem.textContent = message;
-      chatBox.appendChild(userMsgElem);
+      // User message
+      const userWrapper = document.createElement("div");
+      userWrapper.className = "message-wrapper user-wrapper";
+
+      const userAvatar = document.createElement("img");
+      userAvatar.src = "https://cdn-icons-png.flaticon.com/512/1077/1077063.png";
+      userAvatar.className = "avatar";
+
+      const userMessage = document.createElement("div");
+      userMessage.className = "message user-message";
+      userMessage.textContent = message;
+
+      userWrapper.appendChild(userAvatar);
+      userWrapper.appendChild(userMessage);
+      chatBox.appendChild(userWrapper);
       chatBox.scrollTop = chatBox.scrollHeight;
       input.value = "";
 
-      const response = await fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: message })
-      });
-      const data = await response.json();
-
-      const botMsgElem = document.createElement("div");
-      botMsgElem.className = "message bot-message";
-      botMsgElem.textContent = data.response;
-      chatBox.appendChild(botMsgElem);
+      // Add loader
+      loaderElem = document.createElement("div");
+      loaderElem.className = "message-wrapper bot-wrapper";
+      loaderElem.innerHTML = `
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" class="avatar" />
+        <div class="message bot-message loader">
+          <div class="spinner-border text-secondary spinner-border-sm" role="status"></div>
+          <span>Thinking...</span>
+        </div>`;
+      chatBox.appendChild(loaderElem);
       chatBox.scrollTop = chatBox.scrollHeight;
+
+      try {
+        const response = await fetch("/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+        if (loaderElem) loaderElem.remove();
+
+        const botWrapper = document.createElement("div");
+        botWrapper.className = "message-wrapper bot-wrapper";
+
+        const botAvatar = document.createElement("img");
+        botAvatar.src = "https://cdn-icons-png.flaticon.com/512/4712/4712100.png";
+        botAvatar.className = "avatar";
+
+        const botMessage = document.createElement("div");
+        botMessage.className = "message bot-message";
+        botMessage.innerHTML = marked.parse(data.response);
+
+        botWrapper.appendChild(botAvatar);
+        botWrapper.appendChild(botMessage);
+        chatBox.appendChild(botWrapper);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      } catch (error) {
+        if (loaderElem) loaderElem.remove();
+        const errorWrapper = document.createElement("div");
+        errorWrapper.className = "message-wrapper bot-wrapper";
+
+        const errorAvatar = document.createElement("img");
+        errorAvatar.src = "https://cdn-icons-png.flaticon.com/512/4712/4712100.png";
+        errorAvatar.className = "avatar";
+
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "message bot-message";
+        errorMessage.textContent = "Sorry, there was an error contacting the server.";
+
+        errorWrapper.appendChild(errorAvatar);
+        errorWrapper.appendChild(errorMessage);
+        chatBox.appendChild(errorWrapper);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
     }
+
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        sendMessage();
+      }
+    });
   </script>
+
 </body>
 </html>

@@ -6,13 +6,19 @@ from tools.physics_tools import physics_constant_lookup, unit_converter
 class PhysicsAgent:
     def __init__(self,api_key):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash-preview-05-20",
+            model="gemini-2.0-flash",
             google_api_key=api_key,
             temperature=0.3,
         )
         self.tools = [physics_constant_lookup, unit_converter]
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are a helpful physics agent. You can answer questions related to physics constants and unit conversions."),
+            ("system", "You are a helpful math agent. You solve physics problems and explain all the concepts related to the physics. You try to solve the problems using the tools when needed finally after receiving the results form the tools iterate your answer the results in the following manner."
+            "While solving calculation problems do the following: "
+            "1. Analyze the problem and breat it down into smaller steps "
+            "2. Use tools when needed "
+            "3. If no tools are matching the query then use the LLM to solve the problem."
+            "While explaining the concepts make sure to do the following: "
+            "1. Explain the problem and the solution in depth with example and also provide a question similar to the user's query. Furthermore, make sure to give the response in humanized way and don't sound like a robot."),   
             ("human", "{input}"),
             ("placeholder", "{agent_scratchpad}")
         ])

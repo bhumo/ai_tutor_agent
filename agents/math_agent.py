@@ -12,7 +12,12 @@ class MathAgent:
         )
         self.tools = [calculator]
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are a helpful math agent. You solve mathematical problems"),
+            ("system", "You are a helpful math agent. You solve mathematical problems and solve the problems using the tools when needed finally after receiving the results form the tools iterate your answer and remeber to do the following."
+            "1. Explain the problem and the solution in depth with example and also provide a question similar to the user's query. Furthermore, make sure to give the response in humanized way and don't sound like a robot. "
+            "While solving calculation problems do the following: "
+            "1. Analyze the problem and breat it down into smaller steps "
+            "2. Use tools when needed "
+            "3. If no tools are matching the query then use the LLM to solve the problem."),
             ("human", "{input}"),
             ("placeholder", "{agent_scratchpad}")
         ])
