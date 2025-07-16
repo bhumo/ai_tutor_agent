@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-tutor-agent
+    env: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "./start.sh"
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false

@@ -39,6 +39,10 @@ app.mount("/static", StaticFiles(directory="frontend"), name="static")
 async def serve_home():
     return FileResponse("frontend/index.html")
 
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 # API endpoint for chat
 @app.post("/chat")
 async def chat(request: Request):
