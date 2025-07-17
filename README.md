@@ -1,26 +1,39 @@
 # 🎓 Tutor Agent
 
-**Tutor Agent** is your personal AI tutor — built to help students learn and solve **math** and **physics** problems step-by-step. It's powered by **Gemini Pro**, enhanced with smart tools, and comes with a clean, chat-style web interface that actually feels helpful (not robotic).
+# 🚀 AI Tutor Agent: Your AI-Powered Learning Companion 🧠
 
-Whether you want to solve an equation, convert units, plot a function, or even find SAT mock papers — this agent has your back. 💡
+**Your personal AI tutor for Math & Physics!**
+
+**✨ Features:** Intelligent agent switching, powerful tools, web search, and a user-friendly chat interface.
+
+**🛠️ Tech Stack:** Gemini Pro, LangChain, LangGraph, FastAPI, SymPy, Pint, DuckDuckGo, Matplotlib, HTML/CSS/JS
+
+---
+
+Tutor Agent is an intelligent AI tutor designed to help students master **math** and **physics** problems with step-by-step guidance. Powered by **Google's Gemini Pro**, this agent integrates a suite of smart tools and offers a clean, intuitive chat interface for a truly helpful learning experience.
+
+Whether you need to solve complex equations, convert units, plot functions, or even find practice papers, this agent is equipped to assist you.
 
 ---
 
 ## Live Website
 
-The website is deployed using the railway : https://web-production-32aed.up.railway.app/
+Render Deployment: 
+https://ai-tutor-agent-736f.onrender.com
 
-## 🧠 What it Can Do
+Note: Previously the website was hosted on railways 
 
-- 🔁 **Smart Agent Switching** – Knows when to send your question to the math brain 🧮 or the physics brain 🔬.
+## ✨ Key Features & Capabilities
+
+- 🧠 **Smart Agent Switching:** Intelligently routes your questions to the appropriate Math or Physics solver.
 - 🧰 **Uses Tools** – Calculator, symbolic solver, unit converter, and more.
-- 🌐 **Safe Web Search** – Finds academic content (like SAT papers) and filters out junk and unsafe links.
+- 🌐 **Safe Web Search:** Accesses academic resources and filters out irrelevant or unsafe content.
 - 💬 **Explains Like a Real Tutor** – Breaks down problems, explains the why behind answers, and gives similar practice problems.
-- ✨ **Modern Chat UI** – Enter key + send button, avatars, Markdown support, and even a typing spinner!
+- ✨ **Modern Chat UI:**  Features a clean design with avatars, Markdown support, and a typing indicator for a smooth user experience.
 
 ---
 
-## 🔧 Tech Stack
+## 🛠️ Technical Deep Dive
 
 | Layer       | Tools Used                             |
 |-------------|-----------------------------------------|
@@ -32,7 +45,7 @@ The website is deployed using the railway : https://web-production-32aed.up.rail
 
 ---
 
-## 🖥️ Usage (Project Setup locally)
+## 🚀 Local Setup
 
 ### 1. Install dependencies
 ```bash
@@ -41,9 +54,9 @@ pip install -r requirements.txt
 ### 2. Setting up the Gemini API Key
 ```bash
 # Way 1
-In the file main.py set the enviorement os.environ["GEMINI_API_KEY"] before line 31 as the api_key
+In the file main.py set the environment variable os.environ["GEMINI_API_KEY"] before line 31.
 # Way 2
-Second method is to update the api_key in api_keys\gemini_api_key.yaml and in main.py at line 31 set api_key = config["gemini"]["api_key"]
+Alternatively, update the api_key in api_keys\gemini_api_key.yaml and set api_key = config["gemini"]["api_key"] in main.py at line 31.
 ```
 ### 3. To run the backend server 
 In ai_tutor_agent folder (that is my root directory) run the following command
@@ -52,5 +65,3 @@ In ai_tutor_agent folder (that is my root directory) run the following command
 ```
 
 Now go to the web browser and you can see the frontend at (http://localhost:8000/ )
-
-
