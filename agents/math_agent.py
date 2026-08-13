@@ -6,7 +6,7 @@ from tools.math_tools import calculator
 class MathAgent:
     def __init__(self, api_key):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-3.6-flash",
+            model="gemini-2.5-flash-lite",
             google_api_key=api_key,
             temperature=0.1
         )
