@@ -6,7 +6,7 @@ from tools.physics_tools import physics_constant_lookup, unit_converter
 class PhysicsAgent:
     def __init__(self,api_key):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash-lite",
+            model="gemini-3.1-flash-lite",
             google_api_key=api_key,
             temperature=0.3,
         )
