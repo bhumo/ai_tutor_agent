@@ -29,6 +29,7 @@ class TutorAgent:
             summary = "No conversation history available."
         print("Summary of conversation:", summary)
         print(self.memory.chat_memory)
+        summary ="No conversation history available."
         full_prompt = f"""
         Conversation Summary:{summary}
         You are a supervisor tasked with managing a conversation between the following agents:
