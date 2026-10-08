@@ -1,0 +1,15 @@
+[
+  {"id":"force","query":"How are force, mass, and acceleration related?","expected_domain":"physics","expected_route":"rag","expected_document":"physics-force"},
+  {"id":"derivative","query":"What does a derivative represent?","expected_domain":"math","expected_route":"rag","expected_document":"math-derivative"},
+  {"id":"cell","query":"What are the main structures in a cell?","expected_domain":"biology","expected_route":"rag","expected_document":"biology-cell"},
+  {"id":"atom","query":"What particles make up an atom?","expected_domain":"chemistry","expected_route":"rag","expected_document":"chemistry-atom"},
+  {"id":"rag","query":"Explain retrieval-augmented generation.","expected_domain":"computer_science","expected_route":"rag","expected_document":"ai-rag"},
+  {"id":"quadratic","query":"How does the quadratic formula work?","expected_domain":"math","expected_route":"model_fallback"},
+  {"id":"momentum","query":"Explain conservation of momentum.","expected_domain":"physics","expected_route":"model_fallback"},
+  {"id":"dna","query":"How does DNA replication work?","expected_domain":"biology","expected_route":"model_fallback"},
+  {"id":"periodic","query":"Why is the periodic table arranged in periods?","expected_domain":"chemistry","expected_route":"model_fallback"},
+  {"id":"recursion","query":"How does recursion use the call stack?","expected_domain":"computer_science","expected_route":"model_fallback"},
+  {"id":"cooking","query":"How do I bake sourdough bread?","expected_domain":"unsupported","expected_route":"rejected"},
+  {"id":"history","query":"What caused the French Revolution?","expected_domain":"unsupported","expected_route":"rejected"}
+]
+

@@ -1,0 +1,3 @@
+-r requirements-dev.txt
+# Ragas is isolated from the deployed runtime because it is evaluation-only.
+ragas==0.4.3

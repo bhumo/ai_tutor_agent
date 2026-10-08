@@ -1,0 +1,8 @@
+title = "AI Tutor secret scanning"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Previously tracked third-party virtualenv; excluded as vendored code"
+paths = ['''^ai_tutor_env/''']

@@ -1,33 +1,34 @@
-# 🎓 Tutor Agent
+# 🎓 AI Tutor Agent with Authentication
 
-# 🚀 AI Tutor Agent: Your AI-Powered Learning Companion 🧠
+**Your personal AI tutor for Math & Physics - Now with secure user authentication!**
 
-**Your personal AI tutor for Math & Physics!**
+**✨ New Features:**
+- 🔐 **User Authentication**: Secure email/password login and Google OAuth support
+- 👤 **Personalized Experience**: User profiles and conversation tracking
+- �️ **Secure Sessions**: JWT token-based authentication
+- 📱 **Modern UI**: Clean login interface with responsive design
 
-**✨ Features:** Intelligent agent switching, powerful tools, web search, and a user-friendly chat interface.
+**✨ Core Features:**
+- 🧠 Intelligent agent switching between Math and Physics
+- 🧰 Powerful tools (Calculator, symbolic solver, unit converter)
+- 🌐 Safe web search for academic resources
+- 💬 Human-like explanations and step-by-step guidance
+- 📊 Interactive charts and visualizations
 
-**🛠️ Tech Stack:** Gemini Pro, LangChain, LangGraph, FastAPI, SymPy, Pint, DuckDuckGo, Matplotlib, HTML/CSS/JS
+**🛠️ Tech Stack:**
+- **Backend**: FastAPI, SQLAlchemy, JWT Authentication
+- **AI**: Google Gemini Pro, LangChain, LangGraph
+- **Tools**: SymPy, Pint, Matplotlib
+- **Frontend**: HTML5, Bootstrap, JavaScript
+- **Database**: SQLite (development) / PostgreSQL (production)
 
 ---
 
-Tutor Agent is an intelligent AI tutor designed to help students master **math** and **physics** problems with step-by-step guidance. Powered by **Google's Gemini Pro**, this agent integrates a suite of smart tools and offers a clean, intuitive chat interface for a truly helpful learning experience.
+## 🌐 Live Website
 
-Whether you need to solve complex equations, convert units, plot functions, or even find practice papers, this agent is equipped to assist you.
+**Render Deployment:** [https://ai-tutor-agent-736f.onrender.com](https://ai-tutor-agent-736f.onrender.com)
 
----
-
-## Live Website
-
-Render Deployment: 
-https://ai-tutor-agent-736f.onrender.com
-
-Note: Previously the website was hosted on railways 
-
-## ✨ Key Features & Capabilities
-
-- 🧠 **Smart Agent Switching:** Intelligently routes your questions to the appropriate Math or Physics solver.
-- 🧰 **Uses Tools** – Calculator, symbolic solver, unit converter, and more.
-- 🌐 **Safe Web Search:** Accesses academic resources and filters out irrelevant or unsafe content.
+*Note: Create an account or use the demo login to start learning!*
 - 💬 **Explains Like a Real Tutor** – Breaks down problems, explains the why behind answers, and gives similar practice problems.
 - ✨ **Modern Chat UI:**  Features a clean design with avatars, Markdown support, and a typing indicator for a smooth user experience.
 
@@ -45,23 +46,89 @@ Note: Previously the website was hosted on railways
 
 ---
 
-## 🚀 Local Setup
+## 🚀 Quick Setup
 
-### 1. Install dependencies
+### Option 1: Automated Setup (Recommended)
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/ai_tutor_agent.git
+cd ai_tutor_agent
+
+# Run the setup script
+python setup.py
+
+# Install dependencies
 pip install -r requirements.txt
-```
-### 2. Setting up the Gemini API Key
-```bash
-# Way 1
-In the file main.py set the environment variable os.environ["GEMINI_API_KEY"] before line 31.
-# Way 2
-Alternatively, update the api_key in api_keys\gemini_api_key.yaml and set api_key = config["gemini"]["api_key"] in main.py at line 31.
-```
-### 3. To run the backend server 
-In ai_tutor_agent folder (that is my root directory) run the following command
-```bash
- uvicorn main:app --reload
+
+# Update .env file with your Gemini API key
+# Edit .env file and add your GEMINI_API_KEY
+
+# Start the application
+uvicorn main:app --reload
 ```
 
-Now go to the web browser and you can see the frontend at (http://localhost:8000/ )
+### Option 2: Manual Setup
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Create environment file
+cp .env.example .env
+# Edit .env and add your API keys
+
+# 3. Start the application
+uvicorn main:app --reload
+```
+
+### 🔑 Credentials Required
+- **Gemini API Key** (Required): create it in Google AI Studio and store it only in `.env`.
+- **Secret key** (Required): set a random `SECRET_KEY` of at least 32 characters.
+- **Langfuse keys** (Optional): set the public and secret keys to export traces.
+
+### 🌐 Access the Application
+- **Main Application**: http://localhost:8000
+- **Login Page**: http://localhost:8000/login
+- **API Documentation**: http://localhost:8000/docs
+
+---
+
+## 🔐 Authentication Features
+
+### Email/Password Authentication
+- Secure user registration and login
+- Password hashing with bcrypt
+- JWT token-based sessions
+
+### User Management
+- User profiles with personalization
+- User-owned, persisted tutoring sessions
+- Secure logout
+
+---
+
+## 🧠 RAG Architecture
+
+The LangGraph workflow first uses a Pydantic-validated LLM judge to route requests to math, physics, chemistry, biology, computer science, or rejection. Unsupported requests stop immediately. Each supported domain agent searches only its portion of the ten-topic corpus in `rag/data/knowledge.json`, fusing BM25-style lexical and dense concept-vector rankings.
+
+When local evidence exists, the response is grounded and its citations are marked `evidence`. When the supported topic is missing, the base model answers and an allow-list search adds Khan Academy or OpenStax links marked `further_reading`; these fallbacks are logged in `logs/model_fallback.jsonl`. The application never presents further-reading links as evidence.
+
+Gemini responses use Pydantic schemas for both routing and generation. `TutorAnswer` validates the final API contract. Langfuse observations cover semantic routing, each domain agent, retrieval, and generation. Trace scores record router confidence, support decisions, and local-context availability.
+
+```bash
+# Deterministic unit, routing, audit, schema, and retrieval p95 checks
+python -m pytest -q
+
+# Full-corpus offline hallucination and retrieval gate
+python -m evaluation.hallucination
+
+# Credentialed routing, retrieval, and Ragas faithfulness gates
+pip install -r requirements-eval.txt
+python -m evaluation.run_ragas
+
+# Offline paired baseline/candidate quality and latency gate
+python -m evaluation.ab_test
+```
+
+The Ragas command makes Gemini calls. Unit tests use fakes and need no network or API key.
+
+See `docs/architecture_review.md` for the system's production-readiness assessment and scaling roadmap.

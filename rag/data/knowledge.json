@@ -1,0 +1,4072 @@
+[
+  {
+    "id": "math-algebra",
+    "domain": "math",
+    "topic": "algebra",
+    "question": "How do I solve a linear equation?",
+    "answer": "A linear equation has a variable to the first power. Isolate the variable by applying the same inverse operation to both sides. For 2x + 3 = 11, subtract 3 from both sides and divide by 2, giving x = 4."
+  },
+  {
+    "id": "math-derivative",
+    "domain": "math",
+    "topic": "calculus",
+    "question": "What is a derivative?",
+    "answer": "A derivative is the instantaneous rate of change of a function and the slope of its tangent line. It is defined as the limit of the difference quotient as the change in input approaches zero."
+  },
+  {
+    "id": "math-probability",
+    "domain": "math",
+    "topic": "probability",
+    "question": "What is basic probability?",
+    "answer": "For equally likely outcomes, probability is the number of favorable outcomes divided by the total number of possible outcomes. A probability ranges from 0 to 1."
+  },
+  {
+    "id": "physics-force",
+    "domain": "physics",
+    "topic": "forces",
+    "question": "What is Newton's second law?",
+    "answer": "Newton's second law states that net force equals mass times acceleration, F = ma. Force is measured in newtons, mass in kilograms, and acceleration in meters per second squared."
+  },
+  {
+    "id": "physics-energy",
+    "domain": "physics",
+    "topic": "energy",
+    "question": "What is kinetic energy?",
+    "answer": "Kinetic energy is energy due to motion. For an object of mass m moving at speed v, it is KE = one half m times v squared and is measured in joules."
+  },
+  {
+    "id": "physics-motion",
+    "domain": "physics",
+    "topic": "motion",
+    "question": "How are speed, distance, and time related?",
+    "answer": "Average speed equals total distance divided by elapsed time. Rearranging gives distance equals speed times time and time equals distance divided by speed."
+  },
+  {
+    "id": "chemistry-atom",
+    "domain": "chemistry",
+    "topic": "atomic structure",
+    "question": "What is an atom made of?",
+    "answer": "An atom consists of a nucleus containing positively charged protons and neutral neutrons, surrounded by negatively charged electrons. The number of protons defines the element."
+  },
+  {
+    "id": "biology-cell",
+    "domain": "biology",
+    "topic": "cell biology",
+    "question": "What are the main parts of a cell?",
+    "answer": "Cells have a plasma membrane, cytoplasm, and genetic material. Eukaryotic cells also contain a nucleus and membrane-bound organelles such as mitochondria."
+  },
+  {
+    "id": "cs-algorithm",
+    "domain": "computer_science",
+    "topic": "algorithms",
+    "question": "What is an algorithm?",
+    "answer": "An algorithm is a finite, unambiguous sequence of steps for solving a problem. Algorithms are commonly compared by time and space complexity as their input size grows."
+  },
+  {
+    "id": "ai-rag",
+    "domain": "computer_science",
+    "topic": "retrieval augmented generation",
+    "question": "What is retrieval-augmented generation?",
+    "answer": "Retrieval-augmented generation first retrieves relevant evidence from a knowledge source and then gives that context to a language model to produce a grounded answer. Retrieval quality and groundedness should be evaluated separately."
+  },
+  {
+    "id": "la-equation-001",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 2x + 0 = 2.",
+    "answer": "Subtract 0 from both sides to get 2x = 2, then divide by 2. Therefore x = 1.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-002",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 3x + 3 = 9.",
+    "answer": "Subtract 3 from both sides to get 3x = 6, then divide by 3. Therefore x = 2.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-003",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 4x + 6 = 18.",
+    "answer": "Subtract 6 from both sides to get 4x = 12, then divide by 4. Therefore x = 3.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-004",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 5x + 9 = 29.",
+    "answer": "Subtract 9 from both sides to get 5x = 20, then divide by 5. Therefore x = 4.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-005",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 6x + 12 = 42.",
+    "answer": "Subtract 12 from both sides to get 6x = 30, then divide by 6. Therefore x = 5.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-006",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 7x + 15 = 57.",
+    "answer": "Subtract 15 from both sides to get 7x = 42, then divide by 7. Therefore x = 6.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-007",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 8x + 18 = 74.",
+    "answer": "Subtract 18 from both sides to get 8x = 56, then divide by 8. Therefore x = 7.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-008",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 9x + 21 = 93.",
+    "answer": "Subtract 21 from both sides to get 9x = 72, then divide by 9. Therefore x = 8.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-009",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 10x + 1 = 91.",
+    "answer": "Subtract 1 from both sides to get 10x = 90, then divide by 10. Therefore x = 9.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-010",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 11x + 4 = 114.",
+    "answer": "Subtract 4 from both sides to get 11x = 110, then divide by 11. Therefore x = 10.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-011",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 12x + 7 = 139.",
+    "answer": "Subtract 7 from both sides to get 12x = 132, then divide by 12. Therefore x = 11.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-012",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 13x + 10 = 166.",
+    "answer": "Subtract 10 from both sides to get 13x = 156, then divide by 13. Therefore x = 12.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-013",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 14x + 13 = 195.",
+    "answer": "Subtract 13 from both sides to get 14x = 182, then divide by 14. Therefore x = 13.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-014",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 15x + 16 = 226.",
+    "answer": "Subtract 16 from both sides to get 15x = 210, then divide by 15. Therefore x = 14.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-015",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 16x + 19 = 259.",
+    "answer": "Subtract 19 from both sides to get 16x = 240, then divide by 16. Therefore x = 15.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-016",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 17x + 22 = 294.",
+    "answer": "Subtract 22 from both sides to get 17x = 272, then divide by 17. Therefore x = 16.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-017",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 18x + 2 = 308.",
+    "answer": "Subtract 2 from both sides to get 18x = 306, then divide by 18. Therefore x = 17.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-018",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 19x + 5 = 347.",
+    "answer": "Subtract 5 from both sides to get 19x = 342, then divide by 19. Therefore x = 18.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-019",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 20x + 8 = 388.",
+    "answer": "Subtract 8 from both sides to get 20x = 380, then divide by 20. Therefore x = 19.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-020",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 2x + 11 = 51.",
+    "answer": "Subtract 11 from both sides to get 2x = 40, then divide by 2. Therefore x = 20.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-021",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 3x + 14 = 77.",
+    "answer": "Subtract 14 from both sides to get 3x = 63, then divide by 3. Therefore x = 21.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-022",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 4x + 17 = 105.",
+    "answer": "Subtract 17 from both sides to get 4x = 88, then divide by 4. Therefore x = 22.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-023",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 5x + 20 = 135.",
+    "answer": "Subtract 20 from both sides to get 5x = 115, then divide by 5. Therefore x = 23.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-024",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 6x + 0 = 144.",
+    "answer": "Subtract 0 from both sides to get 6x = 144, then divide by 6. Therefore x = 24.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-025",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 7x + 3 = 178.",
+    "answer": "Subtract 3 from both sides to get 7x = 175, then divide by 7. Therefore x = 25.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-026",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 8x + 6 = 214.",
+    "answer": "Subtract 6 from both sides to get 8x = 208, then divide by 8. Therefore x = 26.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-027",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 9x + 9 = 252.",
+    "answer": "Subtract 9 from both sides to get 9x = 243, then divide by 9. Therefore x = 27.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-028",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 10x + 12 = 292.",
+    "answer": "Subtract 12 from both sides to get 10x = 280, then divide by 10. Therefore x = 28.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-029",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 11x + 15 = 334.",
+    "answer": "Subtract 15 from both sides to get 11x = 319, then divide by 11. Therefore x = 29.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-030",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 12x + 18 = 378.",
+    "answer": "Subtract 18 from both sides to get 12x = 360, then divide by 12. Therefore x = 30.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-031",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 13x + 21 = 424.",
+    "answer": "Subtract 21 from both sides to get 13x = 403, then divide by 13. Therefore x = 31.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-032",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 14x + 1 = 449.",
+    "answer": "Subtract 1 from both sides to get 14x = 448, then divide by 14. Therefore x = 32.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-033",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 15x + 4 = 499.",
+    "answer": "Subtract 4 from both sides to get 15x = 495, then divide by 15. Therefore x = 33.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-034",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 16x + 7 = 551.",
+    "answer": "Subtract 7 from both sides to get 16x = 544, then divide by 16. Therefore x = 34.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-035",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 17x + 10 = 605.",
+    "answer": "Subtract 10 from both sides to get 17x = 595, then divide by 17. Therefore x = 35.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-036",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 18x + 13 = 661.",
+    "answer": "Subtract 13 from both sides to get 18x = 648, then divide by 18. Therefore x = 36.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-037",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 19x + 16 = 719.",
+    "answer": "Subtract 16 from both sides to get 19x = 703, then divide by 19. Therefore x = 37.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-038",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 20x + 19 = 779.",
+    "answer": "Subtract 19 from both sides to get 20x = 760, then divide by 20. Therefore x = 38.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-039",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 2x + 22 = 100.",
+    "answer": "Subtract 22 from both sides to get 2x = 78, then divide by 2. Therefore x = 39.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-040",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 3x + 2 = 122.",
+    "answer": "Subtract 2 from both sides to get 3x = 120, then divide by 3. Therefore x = 40.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-041",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 4x + 5 = 169.",
+    "answer": "Subtract 5 from both sides to get 4x = 164, then divide by 4. Therefore x = 41.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-042",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 5x + 8 = 218.",
+    "answer": "Subtract 8 from both sides to get 5x = 210, then divide by 5. Therefore x = 42.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-043",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 6x + 11 = 269.",
+    "answer": "Subtract 11 from both sides to get 6x = 258, then divide by 6. Therefore x = 43.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-044",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 7x + 14 = 322.",
+    "answer": "Subtract 14 from both sides to get 7x = 308, then divide by 7. Therefore x = 44.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-045",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 8x + 17 = 377.",
+    "answer": "Subtract 17 from both sides to get 8x = 360, then divide by 8. Therefore x = 45.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-046",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 9x + 20 = 434.",
+    "answer": "Subtract 20 from both sides to get 9x = 414, then divide by 9. Therefore x = 46.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-047",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 10x + 0 = 470.",
+    "answer": "Subtract 0 from both sides to get 10x = 470, then divide by 10. Therefore x = 47.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-048",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 11x + 3 = 531.",
+    "answer": "Subtract 3 from both sides to get 11x = 528, then divide by 11. Therefore x = 48.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-049",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 12x + 6 = 594.",
+    "answer": "Subtract 6 from both sides to get 12x = 588, then divide by 12. Therefore x = 49.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-050",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 13x + 9 = 659.",
+    "answer": "Subtract 9 from both sides to get 13x = 650, then divide by 13. Therefore x = 50.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-051",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 14x + 12 = 726.",
+    "answer": "Subtract 12 from both sides to get 14x = 714, then divide by 14. Therefore x = 51.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-052",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 15x + 15 = 795.",
+    "answer": "Subtract 15 from both sides to get 15x = 780, then divide by 15. Therefore x = 52.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-053",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 16x + 18 = 866.",
+    "answer": "Subtract 18 from both sides to get 16x = 848, then divide by 16. Therefore x = 53.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-054",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 17x + 21 = 939.",
+    "answer": "Subtract 21 from both sides to get 17x = 918, then divide by 17. Therefore x = 54.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-055",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 18x + 1 = 991.",
+    "answer": "Subtract 1 from both sides to get 18x = 990, then divide by 18. Therefore x = 55.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-056",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 19x + 4 = 1068.",
+    "answer": "Subtract 4 from both sides to get 19x = 1064, then divide by 19. Therefore x = 56.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-057",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 20x + 7 = 1147.",
+    "answer": "Subtract 7 from both sides to get 20x = 1140, then divide by 20. Therefore x = 57.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-058",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 2x + 10 = 126.",
+    "answer": "Subtract 10 from both sides to get 2x = 116, then divide by 2. Therefore x = 58.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-059",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 3x + 13 = 190.",
+    "answer": "Subtract 13 from both sides to get 3x = 177, then divide by 3. Therefore x = 59.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-060",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 4x + 16 = 256.",
+    "answer": "Subtract 16 from both sides to get 4x = 240, then divide by 4. Therefore x = 60.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-061",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 5x + 19 = 324.",
+    "answer": "Subtract 19 from both sides to get 5x = 305, then divide by 5. Therefore x = 61.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-062",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 6x + 22 = 394.",
+    "answer": "Subtract 22 from both sides to get 6x = 372, then divide by 6. Therefore x = 62.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-063",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 7x + 2 = 443.",
+    "answer": "Subtract 2 from both sides to get 7x = 441, then divide by 7. Therefore x = 63.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-064",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 8x + 5 = 517.",
+    "answer": "Subtract 5 from both sides to get 8x = 512, then divide by 8. Therefore x = 64.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-065",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 9x + 8 = 593.",
+    "answer": "Subtract 8 from both sides to get 9x = 585, then divide by 9. Therefore x = 65.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-066",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 10x + 11 = 671.",
+    "answer": "Subtract 11 from both sides to get 10x = 660, then divide by 10. Therefore x = 66.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-067",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 11x + 14 = 751.",
+    "answer": "Subtract 14 from both sides to get 11x = 737, then divide by 11. Therefore x = 67.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-068",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 12x + 17 = 833.",
+    "answer": "Subtract 17 from both sides to get 12x = 816, then divide by 12. Therefore x = 68.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-069",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 13x + 20 = 917.",
+    "answer": "Subtract 20 from both sides to get 13x = 897, then divide by 13. Therefore x = 69.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-070",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 14x + 0 = 980.",
+    "answer": "Subtract 0 from both sides to get 14x = 980, then divide by 14. Therefore x = 70.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-071",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 15x + 3 = 1068.",
+    "answer": "Subtract 3 from both sides to get 15x = 1065, then divide by 15. Therefore x = 71.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-072",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 16x + 6 = 1158.",
+    "answer": "Subtract 6 from both sides to get 16x = 1152, then divide by 16. Therefore x = 72.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-073",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 17x + 9 = 1250.",
+    "answer": "Subtract 9 from both sides to get 17x = 1241, then divide by 17. Therefore x = 73.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-074",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 18x + 12 = 1344.",
+    "answer": "Subtract 12 from both sides to get 18x = 1332, then divide by 18. Therefore x = 74.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-075",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 19x + 15 = 1440.",
+    "answer": "Subtract 15 from both sides to get 19x = 1425, then divide by 19. Therefore x = 75.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-076",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 20x + 18 = 1538.",
+    "answer": "Subtract 18 from both sides to get 20x = 1520, then divide by 20. Therefore x = 76.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-077",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 2x + 21 = 175.",
+    "answer": "Subtract 21 from both sides to get 2x = 154, then divide by 2. Therefore x = 77.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-078",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 3x + 1 = 235.",
+    "answer": "Subtract 1 from both sides to get 3x = 234, then divide by 3. Therefore x = 78.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-079",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 4x + 4 = 320.",
+    "answer": "Subtract 4 from both sides to get 4x = 316, then divide by 4. Therefore x = 79.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-equation-080",
+    "domain": "math",
+    "topic": "linear algebra - linear equations",
+    "question": "Solve 5x + 7 = 407.",
+    "answer": "Subtract 7 from both sides to get 5x = 400, then divide by 5. Therefore x = 80.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-001",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (1, -4) and (2, -5).",
+    "answer": "Add corresponding components: (1 + 2, -4 + -5) = (3, -9).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-002",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (2, -3) and (3, -3).",
+    "answer": "Add corresponding components: (2 + 3, -3 + -3) = (5, -6).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-003",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (3, -2) and (4, -1).",
+    "answer": "Add corresponding components: (3 + 4, -2 + -1) = (7, -3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-004",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (4, -1) and (5, 1).",
+    "answer": "Add corresponding components: (4 + 5, -1 + 1) = (9, 0).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-005",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (5, 0) and (6, 3).",
+    "answer": "Add corresponding components: (5 + 6, 0 + 3) = (11, 3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-006",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (6, 1) and (7, 5).",
+    "answer": "Add corresponding components: (6 + 7, 1 + 5) = (13, 6).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-007",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (7, 2) and (8, -4).",
+    "answer": "Add corresponding components: (7 + 8, 2 + -4) = (15, -2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-008",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (8, 3) and (2, -2).",
+    "answer": "Add corresponding components: (8 + 2, 3 + -2) = (10, 1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-009",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (9, 4) and (3, 0).",
+    "answer": "Add corresponding components: (9 + 3, 4 + 0) = (12, 4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-010",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (10, -4) and (4, 2).",
+    "answer": "Add corresponding components: (10 + 4, -4 + 2) = (14, -2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-011",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (11, -3) and (5, 4).",
+    "answer": "Add corresponding components: (11 + 5, -3 + 4) = (16, 1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-012",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (12, -2) and (6, -5).",
+    "answer": "Add corresponding components: (12 + 6, -2 + -5) = (18, -7).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-013",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (13, -1) and (7, -3).",
+    "answer": "Add corresponding components: (13 + 7, -1 + -3) = (20, -4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-014",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (14, 0) and (8, -1).",
+    "answer": "Add corresponding components: (14 + 8, 0 + -1) = (22, -1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-015",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (15, 1) and (2, 1).",
+    "answer": "Add corresponding components: (15 + 2, 1 + 1) = (17, 2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-016",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (16, 2) and (3, 3).",
+    "answer": "Add corresponding components: (16 + 3, 2 + 3) = (19, 5).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-017",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (17, 3) and (4, 5).",
+    "answer": "Add corresponding components: (17 + 4, 3 + 5) = (21, 8).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-018",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (18, 4) and (5, -4).",
+    "answer": "Add corresponding components: (18 + 5, 4 + -4) = (23, 0).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-019",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (19, -4) and (6, -2).",
+    "answer": "Add corresponding components: (19 + 6, -4 + -2) = (25, -6).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-020",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (20, -3) and (7, 0).",
+    "answer": "Add corresponding components: (20 + 7, -3 + 0) = (27, -3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-021",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (21, -2) and (8, 2).",
+    "answer": "Add corresponding components: (21 + 8, -2 + 2) = (29, 0).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-022",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (22, -1) and (2, 4).",
+    "answer": "Add corresponding components: (22 + 2, -1 + 4) = (24, 3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-023",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (23, 0) and (3, -5).",
+    "answer": "Add corresponding components: (23 + 3, 0 + -5) = (26, -5).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-024",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (24, 1) and (4, -3).",
+    "answer": "Add corresponding components: (24 + 4, 1 + -3) = (28, -2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-025",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (25, 2) and (5, -1).",
+    "answer": "Add corresponding components: (25 + 5, 2 + -1) = (30, 1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-026",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (26, 3) and (6, 1).",
+    "answer": "Add corresponding components: (26 + 6, 3 + 1) = (32, 4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-027",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (27, 4) and (7, 3).",
+    "answer": "Add corresponding components: (27 + 7, 4 + 3) = (34, 7).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-028",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (28, -4) and (8, 5).",
+    "answer": "Add corresponding components: (28 + 8, -4 + 5) = (36, 1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-029",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (29, -3) and (2, -4).",
+    "answer": "Add corresponding components: (29 + 2, -3 + -4) = (31, -7).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-030",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (30, -2) and (3, -2).",
+    "answer": "Add corresponding components: (30 + 3, -2 + -2) = (33, -4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-031",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (31, -1) and (4, 0).",
+    "answer": "Add corresponding components: (31 + 4, -1 + 0) = (35, -1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-032",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (32, 0) and (5, 2).",
+    "answer": "Add corresponding components: (32 + 5, 0 + 2) = (37, 2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-033",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (33, 1) and (6, 4).",
+    "answer": "Add corresponding components: (33 + 6, 1 + 4) = (39, 5).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-034",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (34, 2) and (7, -5).",
+    "answer": "Add corresponding components: (34 + 7, 2 + -5) = (41, -3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-035",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (35, 3) and (8, -3).",
+    "answer": "Add corresponding components: (35 + 8, 3 + -3) = (43, 0).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-036",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (36, 4) and (2, -1).",
+    "answer": "Add corresponding components: (36 + 2, 4 + -1) = (38, 3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-037",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (37, -4) and (3, 1).",
+    "answer": "Add corresponding components: (37 + 3, -4 + 1) = (40, -3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-038",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (38, -3) and (4, 3).",
+    "answer": "Add corresponding components: (38 + 4, -3 + 3) = (42, 0).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-039",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (39, -2) and (5, 5).",
+    "answer": "Add corresponding components: (39 + 5, -2 + 5) = (44, 3).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-040",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (40, -1) and (6, -4).",
+    "answer": "Add corresponding components: (40 + 6, -1 + -4) = (46, -5).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-041",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (41, 0) and (7, -2).",
+    "answer": "Add corresponding components: (41 + 7, 0 + -2) = (48, -2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-042",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (42, 1) and (8, 0).",
+    "answer": "Add corresponding components: (42 + 8, 1 + 0) = (50, 1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-043",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (43, 2) and (2, 2).",
+    "answer": "Add corresponding components: (43 + 2, 2 + 2) = (45, 4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-044",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (44, 3) and (3, 4).",
+    "answer": "Add corresponding components: (44 + 3, 3 + 4) = (47, 7).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-045",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (45, 4) and (4, -5).",
+    "answer": "Add corresponding components: (45 + 4, 4 + -5) = (49, -1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-046",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (46, -4) and (5, -3).",
+    "answer": "Add corresponding components: (46 + 5, -4 + -3) = (51, -7).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-047",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (47, -3) and (6, -1).",
+    "answer": "Add corresponding components: (47 + 6, -3 + -1) = (53, -4).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-048",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (48, -2) and (7, 1).",
+    "answer": "Add corresponding components: (48 + 7, -2 + 1) = (55, -1).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-049",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (49, -1) and (8, 3).",
+    "answer": "Add corresponding components: (49 + 8, -1 + 3) = (57, 2).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-vector-add-050",
+    "domain": "math",
+    "topic": "linear algebra - vectors",
+    "question": "Add the vectors (50, 0) and (2, 5).",
+    "answer": "Add corresponding components: (50 + 2, 0 + 5) = (52, 5).",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "la-dot-product-001",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (1, -3) and (2, -5).",
+    "answer": "Multiply corresponding components and add: 1(2) + -3(-5) = 17.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-002",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (2, -2) and (3, -4).",
+    "answer": "Multiply corresponding components and add: 2(3) + -2(-4) = 14.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-003",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (3, -1) and (4, -3).",
+    "answer": "Multiply corresponding components and add: 3(4) + -1(-3) = 15.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-004",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (4, 0) and (5, -2).",
+    "answer": "Multiply corresponding components and add: 4(5) + 0(-2) = 20.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-005",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (5, 1) and (6, -1).",
+    "answer": "Multiply corresponding components and add: 5(6) + 1(-1) = 29.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-006",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (6, 2) and (2, 0).",
+    "answer": "Multiply corresponding components and add: 6(2) + 2(0) = 12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-007",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (7, 3) and (3, 1).",
+    "answer": "Multiply corresponding components and add: 7(3) + 3(1) = 24.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-008",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (8, -3) and (4, 2).",
+    "answer": "Multiply corresponding components and add: 8(4) + -3(2) = 26.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-009",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (9, -2) and (5, 3).",
+    "answer": "Multiply corresponding components and add: 9(5) + -2(3) = 39.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-010",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (10, -1) and (6, 4).",
+    "answer": "Multiply corresponding components and add: 10(6) + -1(4) = 56.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-011",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (11, 0) and (2, 5).",
+    "answer": "Multiply corresponding components and add: 11(2) + 0(5) = 22.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-012",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (12, 1) and (3, -5).",
+    "answer": "Multiply corresponding components and add: 12(3) + 1(-5) = 31.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-013",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (13, 2) and (4, -4).",
+    "answer": "Multiply corresponding components and add: 13(4) + 2(-4) = 44.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-014",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (1, 3) and (5, -3).",
+    "answer": "Multiply corresponding components and add: 1(5) + 3(-3) = -4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-015",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (2, -3) and (6, -2).",
+    "answer": "Multiply corresponding components and add: 2(6) + -3(-2) = 18.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-016",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (3, -2) and (2, -1).",
+    "answer": "Multiply corresponding components and add: 3(2) + -2(-1) = 8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-017",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (4, -1) and (3, 0).",
+    "answer": "Multiply corresponding components and add: 4(3) + -1(0) = 12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-018",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (5, 0) and (4, 1).",
+    "answer": "Multiply corresponding components and add: 5(4) + 0(1) = 20.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-019",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (6, 1) and (5, 2).",
+    "answer": "Multiply corresponding components and add: 6(5) + 1(2) = 32.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-020",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (7, 2) and (6, 3).",
+    "answer": "Multiply corresponding components and add: 7(6) + 2(3) = 48.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-021",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (8, 3) and (2, 4).",
+    "answer": "Multiply corresponding components and add: 8(2) + 3(4) = 28.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-022",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (9, -3) and (3, 5).",
+    "answer": "Multiply corresponding components and add: 9(3) + -3(5) = 12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-023",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (10, -2) and (4, -5).",
+    "answer": "Multiply corresponding components and add: 10(4) + -2(-5) = 50.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-024",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (11, -1) and (5, -4).",
+    "answer": "Multiply corresponding components and add: 11(5) + -1(-4) = 59.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-025",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (12, 0) and (6, -3).",
+    "answer": "Multiply corresponding components and add: 12(6) + 0(-3) = 72.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-026",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (13, 1) and (2, -2).",
+    "answer": "Multiply corresponding components and add: 13(2) + 1(-2) = 24.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-027",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (1, 2) and (3, -1).",
+    "answer": "Multiply corresponding components and add: 1(3) + 2(-1) = 1.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-028",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (2, 3) and (4, 0).",
+    "answer": "Multiply corresponding components and add: 2(4) + 3(0) = 8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-029",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (3, -3) and (5, 1).",
+    "answer": "Multiply corresponding components and add: 3(5) + -3(1) = 12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-030",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (4, -2) and (6, 2).",
+    "answer": "Multiply corresponding components and add: 4(6) + -2(2) = 20.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-031",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (5, -1) and (2, 3).",
+    "answer": "Multiply corresponding components and add: 5(2) + -1(3) = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-032",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (6, 0) and (3, 4).",
+    "answer": "Multiply corresponding components and add: 6(3) + 0(4) = 18.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-033",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (7, 1) and (4, 5).",
+    "answer": "Multiply corresponding components and add: 7(4) + 1(5) = 33.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-034",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (8, 2) and (5, -5).",
+    "answer": "Multiply corresponding components and add: 8(5) + 2(-5) = 30.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-035",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (9, 3) and (6, -4).",
+    "answer": "Multiply corresponding components and add: 9(6) + 3(-4) = 42.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-036",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (10, -3) and (2, -3).",
+    "answer": "Multiply corresponding components and add: 10(2) + -3(-3) = 29.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-037",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (11, -2) and (3, -2).",
+    "answer": "Multiply corresponding components and add: 11(3) + -2(-2) = 37.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-038",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (12, -1) and (4, -1).",
+    "answer": "Multiply corresponding components and add: 12(4) + -1(-1) = 49.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-039",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (13, 0) and (5, 0).",
+    "answer": "Multiply corresponding components and add: 13(5) + 0(0) = 65.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-dot-product-040",
+    "domain": "math",
+    "topic": "linear algebra - dot products",
+    "question": "Find the dot product of (1, 1) and (6, 1).",
+    "answer": "Multiply corresponding components and add: 1(6) + 1(1) = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-001",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[1, -3], [2, -6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 1(-6) - -3(2) = 0.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-002",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[2, -2], [3, -5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 2(-5) - -2(3) = -4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-003",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[3, -1], [4, -4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 3(-4) - -1(4) = -8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-004",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[4, 0], [5, -3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 4(-3) - 0(5) = -12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-005",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[5, 1], [6, -2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 5(-2) - 1(6) = -16.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-006",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[6, 2], [2, -1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 6(-1) - 2(2) = -10.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-007",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[7, 3], [3, 0]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 7(0) - 3(3) = -9.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-008",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[8, -3], [4, 1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 8(1) - -3(4) = 20.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-009",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[9, -2], [5, 2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 9(2) - -2(5) = 28.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-010",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[10, -1], [6, 3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 10(3) - -1(6) = 36.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-011",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[11, 0], [2, 4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 11(4) - 0(2) = 44.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-012",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[1, 1], [3, 5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 1(5) - 1(3) = 2.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-013",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[2, 2], [4, 6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 2(6) - 2(4) = 4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-014",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[3, 3], [5, -6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 3(-6) - 3(5) = -33.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-015",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[4, -3], [6, -5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 4(-5) - -3(6) = -2.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-016",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[5, -2], [2, -4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 5(-4) - -2(2) = -16.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-017",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[6, -1], [3, -3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 6(-3) - -1(3) = -15.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-018",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[7, 0], [4, -2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 7(-2) - 0(4) = -14.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-019",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[8, 1], [5, -1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 8(-1) - 1(5) = -13.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-020",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[9, 2], [6, 0]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 9(0) - 2(6) = -12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-021",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[10, 3], [2, 1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 10(1) - 3(2) = 4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-022",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[11, -3], [3, 2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 11(2) - -3(3) = 31.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-023",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[1, -2], [4, 3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 1(3) - -2(4) = 11.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-024",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[2, -1], [5, 4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 2(4) - -1(5) = 13.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-025",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[3, 0], [6, 5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 3(5) - 0(6) = 15.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-026",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[4, 1], [2, 6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 4(6) - 1(2) = 22.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-027",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[5, 2], [3, -6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 5(-6) - 2(3) = -36.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-028",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[6, 3], [4, -5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 6(-5) - 3(4) = -42.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-029",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[7, -3], [5, -4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 7(-4) - -3(5) = -13.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-030",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[8, -2], [6, -3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 8(-3) - -2(6) = -12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-031",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[9, -1], [2, -2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 9(-2) - -1(2) = -16.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-032",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[10, 0], [3, -1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 10(-1) - 0(3) = -10.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-033",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[11, 1], [4, 0]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 11(0) - 1(4) = -4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-034",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[1, 2], [5, 1]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 1(1) - 2(5) = -9.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-035",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[2, 3], [6, 2]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 2(2) - 3(6) = -14.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-036",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[3, -3], [2, 3]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 3(3) - -3(2) = 15.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-037",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[4, -2], [3, 4]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 4(4) - -2(3) = 22.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-038",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[5, -1], [4, 5]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 5(5) - -1(4) = 29.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-039",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[6, 0], [5, 6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 6(6) - 0(5) = 36.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-determinant-040",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the determinant of the matrix [[7, 1], [6, -6]].",
+    "answer": "For [[a, b], [c, d]], the determinant is ad - bc. Here it is 7(-6) - 1(6) = -48.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-001",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[1, -2], [2, -4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 1 + -4 = -3.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-002",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[2, -1], [3, -3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 2 + -3 = -1.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-003",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[3, 0], [4, -2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 3 + -2 = 1.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-004",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[4, 1], [5, -1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 4 + -1 = 3.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-005",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[5, 2], [6, 0]].",
+    "answer": "The trace is the sum of the main diagonal entries: 5 + 0 = 5.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-006",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[6, 3], [7, 1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 6 + 1 = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-007",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[7, -2], [8, 2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 7 + 2 = 9.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-008",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[8, -1], [9, 3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 8 + 3 = 11.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-009",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[9, 0], [2, 4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 9 + 4 = 13.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-010",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[1, 1], [3, 5]].",
+    "answer": "The trace is the sum of the main diagonal entries: 1 + 5 = 6.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-011",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[2, 2], [4, -4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 2 + -4 = -2.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-012",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[3, 3], [5, -3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 3 + -3 = 0.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-013",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[4, -2], [6, -2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 4 + -2 = 2.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-014",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[5, -1], [7, -1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 5 + -1 = 4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-015",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[6, 0], [8, 0]].",
+    "answer": "The trace is the sum of the main diagonal entries: 6 + 0 = 6.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-016",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[7, 1], [9, 1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 7 + 1 = 8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-017",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[8, 2], [2, 2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 8 + 2 = 10.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-018",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[9, 3], [3, 3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 9 + 3 = 12.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-019",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[1, -2], [4, 4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 1 + 4 = 5.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-020",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[2, -1], [5, 5]].",
+    "answer": "The trace is the sum of the main diagonal entries: 2 + 5 = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-021",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[3, 0], [6, -4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 3 + -4 = -1.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-022",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[4, 1], [7, -3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 4 + -3 = 1.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-023",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[5, 2], [8, -2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 5 + -2 = 3.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-024",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[6, 3], [9, -1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 6 + -1 = 5.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-025",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[7, -2], [2, 0]].",
+    "answer": "The trace is the sum of the main diagonal entries: 7 + 0 = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-026",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[8, -1], [3, 1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 8 + 1 = 9.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-027",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[9, 0], [4, 2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 9 + 2 = 11.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-028",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[1, 1], [5, 3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 1 + 3 = 4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-029",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[2, 2], [6, 4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 2 + 4 = 6.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-030",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[3, 3], [7, 5]].",
+    "answer": "The trace is the sum of the main diagonal entries: 3 + 5 = 8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-031",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[4, -2], [8, -4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 4 + -4 = 0.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-032",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[5, -1], [9, -3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 5 + -3 = 2.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-033",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[6, 0], [2, -2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 6 + -2 = 4.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-034",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[7, 1], [3, -1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 7 + -1 = 6.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-035",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[8, 2], [4, 0]].",
+    "answer": "The trace is the sum of the main diagonal entries: 8 + 0 = 8.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-036",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[9, 3], [5, 1]].",
+    "answer": "The trace is the sum of the main diagonal entries: 9 + 1 = 10.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-037",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[1, -2], [6, 2]].",
+    "answer": "The trace is the sum of the main diagonal entries: 1 + 2 = 3.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-038",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[2, -1], [7, 3]].",
+    "answer": "The trace is the sum of the main diagonal entries: 2 + 3 = 5.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-039",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[3, 0], [8, 4]].",
+    "answer": "The trace is the sum of the main diagonal entries: 3 + 4 = 7.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "la-matrix-trace-040",
+    "domain": "math",
+    "topic": "linear algebra - matrices",
+    "question": "Find the trace of the matrix [[4, 1], [9, 5]].",
+    "answer": "The trace is the sum of the main diagonal entries: 4 + 5 = 9.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-rectangle-001",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 3 units and width 2 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 6 square units. Perimeter = 2(length + width) = 10 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-002",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 4 units and width 3 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 12 square units. Perimeter = 2(length + width) = 14 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-003",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 5 units and width 4 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 20 square units. Perimeter = 2(length + width) = 18 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-004",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 6 units and width 5 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 30 square units. Perimeter = 2(length + width) = 22 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-005",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 7 units and width 6 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 42 square units. Perimeter = 2(length + width) = 26 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-006",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 8 units and width 7 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 56 square units. Perimeter = 2(length + width) = 30 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-007",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 9 units and width 8 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 72 square units. Perimeter = 2(length + width) = 34 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-008",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 10 units and width 9 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 90 square units. Perimeter = 2(length + width) = 38 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-009",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 11 units and width 10 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 110 square units. Perimeter = 2(length + width) = 42 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-010",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 12 units and width 11 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 132 square units. Perimeter = 2(length + width) = 46 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-011",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 13 units and width 12 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 156 square units. Perimeter = 2(length + width) = 50 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-012",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 14 units and width 13 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 182 square units. Perimeter = 2(length + width) = 54 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-013",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 15 units and width 2 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 30 square units. Perimeter = 2(length + width) = 34 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-014",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 16 units and width 3 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 48 square units. Perimeter = 2(length + width) = 38 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-015",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 17 units and width 4 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 68 square units. Perimeter = 2(length + width) = 42 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-016",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 18 units and width 5 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 90 square units. Perimeter = 2(length + width) = 46 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-017",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 19 units and width 6 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 114 square units. Perimeter = 2(length + width) = 50 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-018",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 20 units and width 7 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 140 square units. Perimeter = 2(length + width) = 54 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-019",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 21 units and width 8 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 168 square units. Perimeter = 2(length + width) = 58 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-020",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 22 units and width 9 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 198 square units. Perimeter = 2(length + width) = 62 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-021",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 23 units and width 10 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 230 square units. Perimeter = 2(length + width) = 66 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-022",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 24 units and width 11 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 264 square units. Perimeter = 2(length + width) = 70 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-023",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 25 units and width 12 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 300 square units. Perimeter = 2(length + width) = 74 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-024",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 26 units and width 13 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 338 square units. Perimeter = 2(length + width) = 78 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-025",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 27 units and width 2 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 54 square units. Perimeter = 2(length + width) = 58 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-026",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 28 units and width 3 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 84 square units. Perimeter = 2(length + width) = 62 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-027",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 29 units and width 4 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 116 square units. Perimeter = 2(length + width) = 66 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-028",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 30 units and width 5 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 150 square units. Perimeter = 2(length + width) = 70 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-029",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 31 units and width 6 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 186 square units. Perimeter = 2(length + width) = 74 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-030",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 32 units and width 7 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 224 square units. Perimeter = 2(length + width) = 78 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-031",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 33 units and width 8 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 264 square units. Perimeter = 2(length + width) = 82 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-032",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 34 units and width 9 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 306 square units. Perimeter = 2(length + width) = 86 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-033",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 35 units and width 10 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 350 square units. Perimeter = 2(length + width) = 90 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-034",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 36 units and width 11 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 396 square units. Perimeter = 2(length + width) = 94 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-035",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 37 units and width 12 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 444 square units. Perimeter = 2(length + width) = 98 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-036",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 38 units and width 13 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 494 square units. Perimeter = 2(length + width) = 102 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-037",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 39 units and width 2 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 78 square units. Perimeter = 2(length + width) = 82 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-038",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 40 units and width 3 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 120 square units. Perimeter = 2(length + width) = 86 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-039",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 41 units and width 4 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 164 square units. Perimeter = 2(length + width) = 90 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-040",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 42 units and width 5 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 210 square units. Perimeter = 2(length + width) = 94 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-041",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 43 units and width 6 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 258 square units. Perimeter = 2(length + width) = 98 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-042",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 44 units and width 7 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 308 square units. Perimeter = 2(length + width) = 102 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-043",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 45 units and width 8 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 360 square units. Perimeter = 2(length + width) = 106 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-044",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 46 units and width 9 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 414 square units. Perimeter = 2(length + width) = 110 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-045",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 47 units and width 10 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 470 square units. Perimeter = 2(length + width) = 114 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-046",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 48 units and width 11 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 528 square units. Perimeter = 2(length + width) = 118 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-047",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 49 units and width 12 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 588 square units. Perimeter = 2(length + width) = 122 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-048",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 50 units and width 13 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 650 square units. Perimeter = 2(length + width) = 126 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-049",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 51 units and width 2 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 102 square units. Perimeter = 2(length + width) = 106 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-rectangle-050",
+    "domain": "math",
+    "topic": "geometry - rectangles",
+    "question": "A rectangle has length 52 units and width 3 units. Find its area and perimeter.",
+    "answer": "Area = length × width = 156 square units. Perimeter = 2(length + width) = 110 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-001",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 4 units and height 3 units.",
+    "answer": "Area = one half × base × height = 1/2 × 4 × 3 = 6 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-002",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 6 units and height 4 units.",
+    "answer": "Area = one half × base × height = 1/2 × 6 × 4 = 12 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-003",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 8 units and height 5 units.",
+    "answer": "Area = one half × base × height = 1/2 × 8 × 5 = 20 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-004",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 10 units and height 6 units.",
+    "answer": "Area = one half × base × height = 1/2 × 10 × 6 = 30 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-005",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 12 units and height 7 units.",
+    "answer": "Area = one half × base × height = 1/2 × 12 × 7 = 42 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-006",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 14 units and height 8 units.",
+    "answer": "Area = one half × base × height = 1/2 × 14 × 8 = 56 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-007",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 16 units and height 9 units.",
+    "answer": "Area = one half × base × height = 1/2 × 16 × 9 = 72 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-008",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 18 units and height 10 units.",
+    "answer": "Area = one half × base × height = 1/2 × 18 × 10 = 90 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-009",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 20 units and height 11 units.",
+    "answer": "Area = one half × base × height = 1/2 × 20 × 11 = 110 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-010",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 22 units and height 12 units.",
+    "answer": "Area = one half × base × height = 1/2 × 22 × 12 = 132 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-011",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 24 units and height 13 units.",
+    "answer": "Area = one half × base × height = 1/2 × 24 × 13 = 156 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-012",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 26 units and height 14 units.",
+    "answer": "Area = one half × base × height = 1/2 × 26 × 14 = 182 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-013",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 28 units and height 15 units.",
+    "answer": "Area = one half × base × height = 1/2 × 28 × 15 = 210 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-014",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 30 units and height 16 units.",
+    "answer": "Area = one half × base × height = 1/2 × 30 × 16 = 240 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-015",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 32 units and height 17 units.",
+    "answer": "Area = one half × base × height = 1/2 × 32 × 17 = 272 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-016",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 34 units and height 3 units.",
+    "answer": "Area = one half × base × height = 1/2 × 34 × 3 = 51 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-017",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 36 units and height 4 units.",
+    "answer": "Area = one half × base × height = 1/2 × 36 × 4 = 72 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-018",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 38 units and height 5 units.",
+    "answer": "Area = one half × base × height = 1/2 × 38 × 5 = 95 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-019",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 40 units and height 6 units.",
+    "answer": "Area = one half × base × height = 1/2 × 40 × 6 = 120 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-020",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 42 units and height 7 units.",
+    "answer": "Area = one half × base × height = 1/2 × 42 × 7 = 147 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-021",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 44 units and height 8 units.",
+    "answer": "Area = one half × base × height = 1/2 × 44 × 8 = 176 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-022",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 46 units and height 9 units.",
+    "answer": "Area = one half × base × height = 1/2 × 46 × 9 = 207 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-023",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 48 units and height 10 units.",
+    "answer": "Area = one half × base × height = 1/2 × 48 × 10 = 240 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-024",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 50 units and height 11 units.",
+    "answer": "Area = one half × base × height = 1/2 × 50 × 11 = 275 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-025",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 52 units and height 12 units.",
+    "answer": "Area = one half × base × height = 1/2 × 52 × 12 = 312 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-026",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 54 units and height 13 units.",
+    "answer": "Area = one half × base × height = 1/2 × 54 × 13 = 351 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-027",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 56 units and height 14 units.",
+    "answer": "Area = one half × base × height = 1/2 × 56 × 14 = 392 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-028",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 58 units and height 15 units.",
+    "answer": "Area = one half × base × height = 1/2 × 58 × 15 = 435 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-029",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 60 units and height 16 units.",
+    "answer": "Area = one half × base × height = 1/2 × 60 × 16 = 480 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-030",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 62 units and height 17 units.",
+    "answer": "Area = one half × base × height = 1/2 × 62 × 17 = 527 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-031",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 64 units and height 3 units.",
+    "answer": "Area = one half × base × height = 1/2 × 64 × 3 = 96 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-032",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 66 units and height 4 units.",
+    "answer": "Area = one half × base × height = 1/2 × 66 × 4 = 132 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-033",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 68 units and height 5 units.",
+    "answer": "Area = one half × base × height = 1/2 × 68 × 5 = 170 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-034",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 70 units and height 6 units.",
+    "answer": "Area = one half × base × height = 1/2 × 70 × 6 = 210 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-035",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 72 units and height 7 units.",
+    "answer": "Area = one half × base × height = 1/2 × 72 × 7 = 252 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-036",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 74 units and height 8 units.",
+    "answer": "Area = one half × base × height = 1/2 × 74 × 8 = 296 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-037",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 76 units and height 9 units.",
+    "answer": "Area = one half × base × height = 1/2 × 76 × 9 = 342 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-038",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 78 units and height 10 units.",
+    "answer": "Area = one half × base × height = 1/2 × 78 × 10 = 390 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-039",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 80 units and height 11 units.",
+    "answer": "Area = one half × base × height = 1/2 × 80 × 11 = 440 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-040",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 82 units and height 12 units.",
+    "answer": "Area = one half × base × height = 1/2 × 82 × 12 = 492 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-041",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 84 units and height 13 units.",
+    "answer": "Area = one half × base × height = 1/2 × 84 × 13 = 546 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-042",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 86 units and height 14 units.",
+    "answer": "Area = one half × base × height = 1/2 × 86 × 14 = 602 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-043",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 88 units and height 15 units.",
+    "answer": "Area = one half × base × height = 1/2 × 88 × 15 = 660 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-044",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 90 units and height 16 units.",
+    "answer": "Area = one half × base × height = 1/2 × 90 × 16 = 720 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-045",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 92 units and height 17 units.",
+    "answer": "Area = one half × base × height = 1/2 × 92 × 17 = 782 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-046",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 94 units and height 3 units.",
+    "answer": "Area = one half × base × height = 1/2 × 94 × 3 = 141 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-047",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 96 units and height 4 units.",
+    "answer": "Area = one half × base × height = 1/2 × 96 × 4 = 192 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-048",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 98 units and height 5 units.",
+    "answer": "Area = one half × base × height = 1/2 × 98 × 5 = 245 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-049",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 100 units and height 6 units.",
+    "answer": "Area = one half × base × height = 1/2 × 100 × 6 = 300 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-triangle-area-050",
+    "domain": "math",
+    "topic": "geometry - triangles",
+    "question": "Find the area of a triangle with base 102 units and height 7 units.",
+    "answer": "Area = one half × base × height = 1/2 × 102 × 7 = 357 square units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-001",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 1 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1π square units. Circumference = 2πr = 2π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-002",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 2 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 4π square units. Circumference = 2πr = 4π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-003",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 3 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 9π square units. Circumference = 2πr = 6π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-004",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 4 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 16π square units. Circumference = 2πr = 8π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-005",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 5 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 25π square units. Circumference = 2πr = 10π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-006",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 6 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 36π square units. Circumference = 2πr = 12π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-007",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 7 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 49π square units. Circumference = 2πr = 14π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-008",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 8 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 64π square units. Circumference = 2πr = 16π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-009",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 9 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 81π square units. Circumference = 2πr = 18π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-010",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 10 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 100π square units. Circumference = 2πr = 20π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-011",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 11 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 121π square units. Circumference = 2πr = 22π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-012",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 12 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 144π square units. Circumference = 2πr = 24π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-013",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 13 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 169π square units. Circumference = 2πr = 26π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-014",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 14 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 196π square units. Circumference = 2πr = 28π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-015",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 15 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 225π square units. Circumference = 2πr = 30π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-016",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 16 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 256π square units. Circumference = 2πr = 32π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-017",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 17 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 289π square units. Circumference = 2πr = 34π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-018",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 18 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 324π square units. Circumference = 2πr = 36π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-019",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 19 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 361π square units. Circumference = 2πr = 38π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-020",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 20 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 400π square units. Circumference = 2πr = 40π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-021",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 21 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 441π square units. Circumference = 2πr = 42π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-022",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 22 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 484π square units. Circumference = 2πr = 44π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-023",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 23 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 529π square units. Circumference = 2πr = 46π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-024",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 24 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 576π square units. Circumference = 2πr = 48π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-025",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 25 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 625π square units. Circumference = 2πr = 50π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-026",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 26 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 676π square units. Circumference = 2πr = 52π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-027",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 27 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 729π square units. Circumference = 2πr = 54π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-028",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 28 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 784π square units. Circumference = 2πr = 56π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-029",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 29 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 841π square units. Circumference = 2πr = 58π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-030",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 30 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 900π square units. Circumference = 2πr = 60π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-031",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 31 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 961π square units. Circumference = 2πr = 62π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-032",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 32 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1024π square units. Circumference = 2πr = 64π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-033",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 33 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1089π square units. Circumference = 2πr = 66π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-034",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 34 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1156π square units. Circumference = 2πr = 68π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-035",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 35 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1225π square units. Circumference = 2πr = 70π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-036",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 36 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1296π square units. Circumference = 2πr = 72π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-037",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 37 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1369π square units. Circumference = 2πr = 74π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-038",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 38 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1444π square units. Circumference = 2πr = 76π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-039",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 39 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1521π square units. Circumference = 2πr = 78π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-040",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 40 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1600π square units. Circumference = 2πr = 80π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-041",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 41 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1681π square units. Circumference = 2πr = 82π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-042",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 42 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1764π square units. Circumference = 2πr = 84π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-043",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 43 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1849π square units. Circumference = 2πr = 86π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-044",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 44 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 1936π square units. Circumference = 2πr = 88π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-045",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 45 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2025π square units. Circumference = 2πr = 90π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-046",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 46 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2116π square units. Circumference = 2πr = 92π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-047",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 47 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2209π square units. Circumference = 2πr = 94π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-048",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 48 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2304π square units. Circumference = 2πr = 96π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-049",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 49 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2401π square units. Circumference = 2πr = 98π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-circle-050",
+    "domain": "math",
+    "topic": "geometry - circles",
+    "question": "A circle has radius 50 units. Find its exact area and circumference.",
+    "answer": "Area = πr² = 2500π square units. Circumference = 2πr = 100π units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-distance-001",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-20, -8) and (-17, -4).",
+    "answer": "Using the distance formula gives √((-17 - -20)² + (-4 - -8)²) = √((3)² + (4)²) = 5 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-002",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-19, -7) and (-13, 1).",
+    "answer": "Using the distance formula gives √((-13 - -19)² + (1 - -7)²) = √((6)² + (8)²) = 10 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-003",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-18, -6) and (-9, 6).",
+    "answer": "Using the distance formula gives √((-9 - -18)² + (6 - -6)²) = √((9)² + (12)²) = 15 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-004",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-17, -5) and (-5, 11).",
+    "answer": "Using the distance formula gives √((-5 - -17)² + (11 - -5)²) = √((12)² + (16)²) = 20 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-005",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-16, -4) and (-1, 16).",
+    "answer": "Using the distance formula gives √((-1 - -16)² + (16 - -4)²) = √((15)² + (20)²) = 25 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-006",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-15, -3) and (3, 21).",
+    "answer": "Using the distance formula gives √((3 - -15)² + (21 - -3)²) = √((18)² + (24)²) = 30 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-007",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-14, -2) and (7, 26).",
+    "answer": "Using the distance formula gives √((7 - -14)² + (26 - -2)²) = √((21)² + (28)²) = 35 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-008",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-13, -1) and (11, 31).",
+    "answer": "Using the distance formula gives √((11 - -13)² + (31 - -1)²) = √((24)² + (32)²) = 40 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-009",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-12, 0) and (15, 36).",
+    "answer": "Using the distance formula gives √((15 - -12)² + (36 - 0)²) = √((27)² + (36)²) = 45 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-010",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-11, 1) and (19, 41).",
+    "answer": "Using the distance formula gives √((19 - -11)² + (41 - 1)²) = √((30)² + (40)²) = 50 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-011",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-10, 2) and (-7, 6).",
+    "answer": "Using the distance formula gives √((-7 - -10)² + (6 - 2)²) = √((3)² + (4)²) = 5 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-012",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-9, 3) and (-3, 11).",
+    "answer": "Using the distance formula gives √((-3 - -9)² + (11 - 3)²) = √((6)² + (8)²) = 10 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-013",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-8, 4) and (1, 16).",
+    "answer": "Using the distance formula gives √((1 - -8)² + (16 - 4)²) = √((9)² + (12)²) = 15 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-014",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-7, 5) and (5, 21).",
+    "answer": "Using the distance formula gives √((5 - -7)² + (21 - 5)²) = √((12)² + (16)²) = 20 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-015",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-6, 6) and (9, 26).",
+    "answer": "Using the distance formula gives √((9 - -6)² + (26 - 6)²) = √((15)² + (20)²) = 25 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-016",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-5, 7) and (13, 31).",
+    "answer": "Using the distance formula gives √((13 - -5)² + (31 - 7)²) = √((18)² + (24)²) = 30 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-017",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-4, 8) and (17, 36).",
+    "answer": "Using the distance formula gives √((17 - -4)² + (36 - 8)²) = √((21)² + (28)²) = 35 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-018",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-3, -8) and (21, 24).",
+    "answer": "Using the distance formula gives √((21 - -3)² + (24 - -8)²) = √((24)² + (32)²) = 40 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-019",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-2, -7) and (25, 29).",
+    "answer": "Using the distance formula gives √((25 - -2)² + (29 - -7)²) = √((27)² + (36)²) = 45 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-020",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (-1, -6) and (29, 34).",
+    "answer": "Using the distance formula gives √((29 - -1)² + (34 - -6)²) = √((30)² + (40)²) = 50 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-021",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (0, -5) and (3, -1).",
+    "answer": "Using the distance formula gives √((3 - 0)² + (-1 - -5)²) = √((3)² + (4)²) = 5 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-022",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (1, -4) and (7, 4).",
+    "answer": "Using the distance formula gives √((7 - 1)² + (4 - -4)²) = √((6)² + (8)²) = 10 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-023",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (2, -3) and (11, 9).",
+    "answer": "Using the distance formula gives √((11 - 2)² + (9 - -3)²) = √((9)² + (12)²) = 15 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-024",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (3, -2) and (15, 14).",
+    "answer": "Using the distance formula gives √((15 - 3)² + (14 - -2)²) = √((12)² + (16)²) = 20 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-025",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (4, -1) and (19, 19).",
+    "answer": "Using the distance formula gives √((19 - 4)² + (19 - -1)²) = √((15)² + (20)²) = 25 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-026",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (5, 0) and (23, 24).",
+    "answer": "Using the distance formula gives √((23 - 5)² + (24 - 0)²) = √((18)² + (24)²) = 30 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-027",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (6, 1) and (27, 29).",
+    "answer": "Using the distance formula gives √((27 - 6)² + (29 - 1)²) = √((21)² + (28)²) = 35 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-028",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (7, 2) and (31, 34).",
+    "answer": "Using the distance formula gives √((31 - 7)² + (34 - 2)²) = √((24)² + (32)²) = 40 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-029",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (8, 3) and (35, 39).",
+    "answer": "Using the distance formula gives √((35 - 8)² + (39 - 3)²) = √((27)² + (36)²) = 45 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-030",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (9, 4) and (39, 44).",
+    "answer": "Using the distance formula gives √((39 - 9)² + (44 - 4)²) = √((30)² + (40)²) = 50 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-031",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (10, 5) and (13, 9).",
+    "answer": "Using the distance formula gives √((13 - 10)² + (9 - 5)²) = √((3)² + (4)²) = 5 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-032",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (11, 6) and (17, 14).",
+    "answer": "Using the distance formula gives √((17 - 11)² + (14 - 6)²) = √((6)² + (8)²) = 10 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-033",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (12, 7) and (21, 19).",
+    "answer": "Using the distance formula gives √((21 - 12)² + (19 - 7)²) = √((9)² + (12)²) = 15 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-034",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (13, 8) and (25, 24).",
+    "answer": "Using the distance formula gives √((25 - 13)² + (24 - 8)²) = √((12)² + (16)²) = 20 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-035",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (14, -8) and (29, 12).",
+    "answer": "Using the distance formula gives √((29 - 14)² + (12 - -8)²) = √((15)² + (20)²) = 25 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-036",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (15, -7) and (33, 17).",
+    "answer": "Using the distance formula gives √((33 - 15)² + (17 - -7)²) = √((18)² + (24)²) = 30 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-037",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (16, -6) and (37, 22).",
+    "answer": "Using the distance formula gives √((37 - 16)² + (22 - -6)²) = √((21)² + (28)²) = 35 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-038",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (17, -5) and (41, 27).",
+    "answer": "Using the distance formula gives √((41 - 17)² + (27 - -5)²) = √((24)² + (32)²) = 40 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-039",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (18, -4) and (45, 32).",
+    "answer": "Using the distance formula gives √((45 - 18)² + (32 - -4)²) = √((27)² + (36)²) = 45 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-040",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (19, -3) and (49, 37).",
+    "answer": "Using the distance formula gives √((49 - 19)² + (37 - -3)²) = √((30)² + (40)²) = 50 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-041",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (20, -2) and (23, 2).",
+    "answer": "Using the distance formula gives √((23 - 20)² + (2 - -2)²) = √((3)² + (4)²) = 5 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-042",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (21, -1) and (27, 7).",
+    "answer": "Using the distance formula gives √((27 - 21)² + (7 - -1)²) = √((6)² + (8)²) = 10 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-043",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (22, 0) and (31, 12).",
+    "answer": "Using the distance formula gives √((31 - 22)² + (12 - 0)²) = √((9)² + (12)²) = 15 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-044",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (23, 1) and (35, 17).",
+    "answer": "Using the distance formula gives √((35 - 23)² + (17 - 1)²) = √((12)² + (16)²) = 20 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-045",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (24, 2) and (39, 22).",
+    "answer": "Using the distance formula gives √((39 - 24)² + (22 - 2)²) = √((15)² + (20)²) = 25 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-046",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (25, 3) and (43, 27).",
+    "answer": "Using the distance formula gives √((43 - 25)² + (27 - 3)²) = √((18)² + (24)²) = 30 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-047",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (26, 4) and (47, 32).",
+    "answer": "Using the distance formula gives √((47 - 26)² + (32 - 4)²) = √((21)² + (28)²) = 35 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-048",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (27, 5) and (51, 37).",
+    "answer": "Using the distance formula gives √((51 - 27)² + (37 - 5)²) = √((24)² + (32)²) = 40 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-049",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (28, 6) and (55, 42).",
+    "answer": "Using the distance formula gives √((55 - 28)² + (42 - 6)²) = √((27)² + (36)²) = 45 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-distance-050",
+    "domain": "math",
+    "topic": "geometry - coordinate plane",
+    "question": "Find the distance between (29, 7) and (59, 47).",
+    "answer": "Using the distance formula gives √((59 - 29)² + (47 - 7)²) = √((30)² + (40)²) = 50 units.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "geo-pythagorean-001",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 3 and 4 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(3² + 4²) = √25 = 5 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-002",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 6 and 8 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(6² + 8²) = √100 = 10 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-003",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 9 and 12 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(9² + 12²) = √225 = 15 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-004",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 12 and 16 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(12² + 16²) = √400 = 20 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-005",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 15 and 20 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(15² + 20²) = √625 = 25 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-006",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 18 and 24 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(18² + 24²) = √900 = 30 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-007",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 21 and 28 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(21² + 28²) = √1225 = 35 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-008",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 24 and 32 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(24² + 32²) = √1600 = 40 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-009",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 27 and 36 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(27² + 36²) = √2025 = 45 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-010",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 30 and 40 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(30² + 40²) = √2500 = 50 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-011",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 33 and 44 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(33² + 44²) = √3025 = 55 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-012",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 36 and 48 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(36² + 48²) = √3600 = 60 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-013",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 39 and 52 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(39² + 52²) = √4225 = 65 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-014",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 42 and 56 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(42² + 56²) = √4900 = 70 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-015",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 45 and 60 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(45² + 60²) = √5625 = 75 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-016",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 48 and 64 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(48² + 64²) = √6400 = 80 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-017",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 51 and 68 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(51² + 68²) = √7225 = 85 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-018",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 54 and 72 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(54² + 72²) = √8100 = 90 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-019",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 57 and 76 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(57² + 76²) = √9025 = 95 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-020",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 60 and 80 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(60² + 80²) = √10000 = 100 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-021",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 63 and 84 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(63² + 84²) = √11025 = 105 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-022",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 66 and 88 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(66² + 88²) = √12100 = 110 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-023",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 69 and 92 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(69² + 92²) = √13225 = 115 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-024",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 72 and 96 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(72² + 96²) = √14400 = 120 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-025",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 75 and 100 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(75² + 100²) = √15625 = 125 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-026",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 78 and 104 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(78² + 104²) = √16900 = 130 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-027",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 81 and 108 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(81² + 108²) = √18225 = 135 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-028",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 84 and 112 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(84² + 112²) = √19600 = 140 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-029",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 87 and 116 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(87² + 116²) = √21025 = 145 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-030",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 90 and 120 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(90² + 120²) = √22500 = 150 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-031",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 93 and 124 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(93² + 124²) = √24025 = 155 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-032",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 96 and 128 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(96² + 128²) = √25600 = 160 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-033",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 99 and 132 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(99² + 132²) = √27225 = 165 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-034",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 102 and 136 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(102² + 136²) = √28900 = 170 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-035",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 105 and 140 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(105² + 140²) = √30625 = 175 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-036",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 108 and 144 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(108² + 144²) = √32400 = 180 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-037",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 111 and 148 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(111² + 148²) = √34225 = 185 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-038",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 114 and 152 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(114² + 152²) = √36100 = 190 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-039",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 117 and 156 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(117² + 156²) = √38025 = 195 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-040",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 120 and 160 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(120² + 160²) = √40000 = 200 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-041",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 123 and 164 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(123² + 164²) = √42025 = 205 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-042",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 126 and 168 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(126² + 168²) = √44100 = 210 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-043",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 129 and 172 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(129² + 172²) = √46225 = 215 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-044",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 132 and 176 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(132² + 176²) = √48400 = 220 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-045",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 135 and 180 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(135² + 180²) = √50625 = 225 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-046",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 138 and 184 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(138² + 184²) = √52900 = 230 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-047",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 141 and 188 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(141² + 188²) = √55225 = 235 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-048",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 144 and 192 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(144² + 192²) = √57600 = 240 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-049",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 147 and 196 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(147² + 196²) = √60025 = 245 units.",
+    "difficulty": "beginner"
+  },
+  {
+    "id": "geo-pythagorean-050",
+    "domain": "math",
+    "topic": "geometry - right triangles",
+    "question": "A right triangle has legs 150 and 200 units. Find the hypotenuse.",
+    "answer": "By the Pythagorean theorem, c = √(150² + 200²) = √62500 = 250 units.",
+    "difficulty": "beginner"
+  }
+]

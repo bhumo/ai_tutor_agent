@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 from typing import Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
+
+from rag.config import DEFAULT_GEMINI_MODEL
 from langchain.memory import ConversationSummaryMemory
 from langchain_core.messages import AIMessage # Added AIMessage import
 
@@ -11,7 +13,7 @@ class RouteDecision(BaseModel):
 class TutorAgent:
     def __init__(self, api_key: str):
         self.llm_raw = ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash-preview-05-20",
+            model=DEFAULT_GEMINI_MODEL,
             google_api_key=api_key,
             temperature=0.5,    
         )

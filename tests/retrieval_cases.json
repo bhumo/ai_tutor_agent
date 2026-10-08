@@ -1,0 +1,13 @@
+[
+  {"id":"algebra-exact","query":"How do I solve a linear equation?","domain":"math","relevant":["math-algebra"]},
+  {"id":"algebra-paraphrase","query":"Isolate the unknown in a first-degree equation","domain":"math","relevant":["math-algebra"]},
+  {"id":"derivative-paraphrase","query":"What is instantaneous rate of change and tangent slope?","domain":"math","relevant":["math-derivative"]},
+  {"id":"probability-paraphrase","query":"How is the chance of a favorable outcome calculated?","domain":"math","relevant":["math-probability"]},
+  {"id":"force-paraphrase","query":"How are an object's mass and acceleration related to net force?","domain":"physics","relevant":["physics-force"]},
+  {"id":"energy-paraphrase","query":"How much energy does a moving object have?","domain":"physics","relevant":["physics-energy"]},
+  {"id":"motion-paraphrase","query":"Relate distance traveled, elapsed time, and average speed","domain":"physics","relevant":["physics-motion"]},
+  {"id":"atom-paraphrase","query":"Describe protons, neutrons, electrons, and the nucleus","domain":"chemistry","relevant":["chemistry-atom"]},
+  {"id":"cell-paraphrase","query":"Describe the membrane, cytoplasm, nucleus, and organelles","domain":"biology","relevant":["biology-cell"]},
+  {"id":"algorithm-paraphrase","query":"What is a finite sequence of computational steps?","domain":"computer_science","relevant":["cs-algorithm"]},
+  {"id":"rag-paraphrase","query":"How does retrieved context ground model generation?","domain":"computer_science","relevant":["ai-rag"]}
+]

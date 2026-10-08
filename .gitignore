@@ -1,0 +1,11 @@
+.env
+.venv/
+ai_tutor_env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.db
+logs/
+evaluation/results/
+uploads/
+api_keys/*.yaml

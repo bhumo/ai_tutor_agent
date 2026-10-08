@@ -1,5 +1,7 @@
 import google.generativeai as genai
 
+from rag.config import DEFAULT_GEMINI_MODEL
+
 def generate_gemini_query(prompt):
     """
     Generate a query using the Gemini API.
@@ -12,7 +14,7 @@ def generate_gemini_query(prompt):
     # for model in genai.list_models():
     #     print(model.name, model.supported_generation_methods)
     # print("printing model")
-    model = genai.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    model = genai.GenerativeModel(DEFAULT_GEMINI_MODEL)
     try:
         response = model.generate_content(prompt)
         return response.text

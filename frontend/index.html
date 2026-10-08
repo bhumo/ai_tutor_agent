@@ -2,23 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tutor Agent Chat</title>
+  <title>AI Tutor Chat</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <!-- Markdown Parser -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Sanitize model-generated HTML before inserting it into the page -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
 
   <style>
     body {
       background-color: #f0f2f5;
-      padding-top: 30px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 1rem 0;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .user-info {
+      color: white;
+      margin-right: 1rem;
+    }
+
+    .btn-logout {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      border-radius: 20px;
+      padding: 0.375rem 1rem;
+    }
+
+    .btn-logout:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+    }
+
+    .main-content {
+      padding-top: 20px;
     }
 
     .chat-container {
       max-width: 700px;
-      height: 75vh;
+      height: 70vh;
       margin: auto;
       background-color: white;
       border-radius: 12px;
@@ -110,12 +145,32 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">
+        <i class="fas fa-graduation-cap me-2"></i>
+        AI Tutor
+      </a>
+      <div class="d-flex align-items-center">
+        <div class="user-info d-none" id="userInfo">
+          <span id="userName">Loading...</span>
+        </div>
+        <button class="btn btn-logout" onclick="logout()">
+          <i class="fas fa-sign-out-alt me-1"></i>
+          Logout
+        </button>
+      </div>
+    </div>
+  </nav>
 
-  <div class="chat-container" id="chatBox">
-    <div class="message-wrapper bot-wrapper">
-      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="Tutor" class="avatar" />
-      <div class="message bot-message">
-        Hi! I'm your Tutor Agent. Ask me anything related to <strong>math</strong> or <strong>physics</strong>.
+  <div class="main-content">
+    <div class="chat-container" id="chatBox">
+      <div class="message-wrapper bot-wrapper">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="Tutor" class="avatar" />
+        <div class="message bot-message">
+          Hi! I'm your AI Tutor. Ask me about <strong>math, physics, chemistry, biology,</strong> or <strong>computer science</strong>.
+        </div>
       </div>
     </div>
   </div>
@@ -133,18 +188,67 @@
   <script>
     const input = document.getElementById("userInput");
     const chatBox = document.getElementById("chatBox");
+    const userInfo = document.getElementById("userInfo");
+    const userName = document.getElementById("userName");
     let loaderElem = null;
+    let currentUser = null;
+    let currentSessionId = localStorage.getItem('activeSessionId');
+
+    // Check authentication on page load
+    window.addEventListener('load', async () => {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        window.location.href = '/static/login.html';
+        return;
+      }
+
+      // Verify token and get user info
+      try {
+        const response = await fetch('/auth/me', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          currentUser = await response.json();
+          userName.textContent = currentUser.full_name || currentUser.email;
+          userInfo.classList.remove('d-none');
+        } else {
+          localStorage.removeItem('token');
+          window.location.href = '/static/login.html';
+        }
+      } catch (error) {
+        localStorage.removeItem('token');
+        window.location.href = '/static/login.html';
+      }
+    });
+
+    // Logout function
+    function logout() {
+      localStorage.removeItem('token');
+      localStorage.removeItem('activeSessionId');
+      window.location.href = '/static/login.html';
+    }
 
     async function sendMessage() {
       const message = input.value.trim();
       if (!message) return;
+
+      const token = localStorage.getItem('token');
+      if (!token) {
+        window.location.href = '/static/login.html';
+        return;
+      }
 
       // User message
       const userWrapper = document.createElement("div");
       userWrapper.className = "message-wrapper user-wrapper";
 
       const userAvatar = document.createElement("img");
-      userAvatar.src = "https://cdn-icons-png.flaticon.com/512/1077/1077063.png";
+      userAvatar.src = currentUser?.profile_picture || "https://cdn-icons-png.flaticon.com/512/1077/1077063.png";
       userAvatar.className = "avatar";
 
       const userMessage = document.createElement("div");
@@ -172,12 +276,33 @@
       try {
         const response = await fetch("/chat", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: message })
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({ message: message, session_id: currentSessionId })
         });
 
         const data = await response.json();
+
+        if (response.status === 401 || response.status === 403) {
+          localStorage.removeItem('token');
+          window.location.href = '/static/login.html';
+          return;
+        }
+
         if (loaderElem) loaderElem.remove();
+
+        if (!response.ok) {
+          if (response.status === 404 && currentSessionId) {
+            localStorage.removeItem('activeSessionId');
+            currentSessionId = null;
+          }
+          throw new Error(data.detail || "Tutor request failed");
+        }
+
+        currentSessionId = data.session_id;
+        localStorage.setItem('activeSessionId', currentSessionId);
 
         const botWrapper = document.createElement("div");
         botWrapper.className = "message-wrapper bot-wrapper";
@@ -188,7 +313,7 @@
 
         const botMessage = document.createElement("div");
         botMessage.className = "message bot-message";
-        botMessage.innerHTML = marked.parse(data.response);
+        botMessage.innerHTML = DOMPurify.sanitize(marked.parse(data.response));
 
         botWrapper.appendChild(botAvatar);
         botWrapper.appendChild(botMessage);

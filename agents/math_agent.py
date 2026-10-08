@@ -1,4 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+
+from rag.config import DEFAULT_GEMINI_MODEL
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate
 from tools.math_tools import calculator
@@ -6,7 +8,7 @@ from tools.math_tools import calculator
 class MathAgent:
     def __init__(self, api_key):
         self.llm = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash",
+            model=DEFAULT_GEMINI_MODEL,
             google_api_key=api_key,
             temperature=0.1
         )
